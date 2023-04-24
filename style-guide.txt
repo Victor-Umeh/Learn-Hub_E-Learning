@@ -1,0 +1,34 @@
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- White: #FFFFFF
+- Purple: #7230A7
+
+### Neutral 
+
+- Very-light-purple: #C281F4
+- Very-light-gray: #DFDFDF 
+- Input-fields-overlay: #F4E8FE      
+
+## Typography
+
+- Gray: #444343
+- Off-white: #D9DAFF 
+- Purple: #911DED
+- Blue: #0047FF
+
+### Font
+
+- Family: ['Inter'](https://fonts.google.com/specimen/Inter?query=Inter)
+
+- Weights: 300,400,500,700,800
