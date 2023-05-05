@@ -1,0 +1,276 @@
+/* 
+! Mobile-First Approach
+- Variables
+- Reset
+- Base Styles
+- Utility Styles
+- Mobile Styles
+- Tablet Styles
+- Desktop Styles 
+*/
+
+/* Variables */
+:root {
+    /* Primary Colors */
+    --white: hsl(0, 0%, 100%);
+    --purple: hsl(273, 55%, 42%);
+    --black: hsla(0, 0%, 0%, 1);
+  
+    /* Secondary Colors */
+    --very-light-purple: hsl(274, 84%, 73%);
+    --very-light-gray: hsl(0, 0%, 81%);
+    --input-fields-overlay: hsl(273, 92%, 95%);
+  
+    /* Typography Colors */
+    --off-white: hsl(238, 100%, 93%);
+    --gray: hsl(0, 1%, 26%);
+    --type-purple: hsl(273, 85%, 52%);
+    --blue: hsl(223, 100%, 50%);
+    --user-type-heading: hsl(220, 43%, 11%);
+    --user-type-body: rgba(102, 112, 133, 1);
+    --bright-cyan: rgba(40, 214, 216, 1);
+    --bg-color: hsla(274, 62%, 80%, 1);
+    --h1-color: hsla(274, 85%, 52%, 1);
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+h1,
+p,
+ul {
+    margin: 0;
+}
+
+/* Base styles */
+body {
+    background-image: url(../../assets/pattern-circle-irregular.svg);
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position: top 0 left 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Utility Styles */
+.container {
+    width: min(85%, 1200px);
+    margin-inline: auto;
+}
+
+/* Mobile Styles */
+/* Header style */
+header {
+    color: var(--white);
+}
+
+header h1 {
+    font-family: 'Nunito', sans-serif;
+    margin-block-start: 2rem;
+    font-size: 1rem;
+    line-height: 26px;
+    font-weight: 600;
+    width: 39%;
+}
+
+header .hide {
+    display: none;
+}
+
+/* MAin Styles */
+main {
+    text-align: center;
+    margin-block: 5rem 1rem;
+}
+
+main button.ggle {
+    padding-block: 0.3rem;
+    border: none;
+    background-color: var(--input-fields-overlay);
+    width: 80%;
+    border-radius: 5px;
+}
+
+main button.ggle a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    color: var(--black);
+}
+
+main h2 {
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4rem;
+}
+
+main form label {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--black);
+}
+
+main form input[type="email"], form input[type="password"], input[type="text"] {
+    border: 0.05px solid rgba(0, 0, 0, 0.445);
+    background-color: var(--input-fields-overlay);
+    border-radius: 5px;
+    width: 80%;
+    height: 2rem;
+    font-family: 'Nunito', sans-serif;
+    margin-block: 0.5rem 1.5rem;
+}
+
+main form .check {
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Nunito', sans-serif;
+}
+
+main form .check input[type="checkbox"] {
+    margin-inline-start: 0rem;
+}
+
+.check a {
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+form button {
+    margin-block-start: 2rem;
+    padding-block: 0.5rem;
+    border-radius: 5px;
+    width: 100%;
+    color: var(--white);
+    border: none;
+    background-color: var(--h1-color);
+}
+
+/* Footer Style */
+footer {
+    text-align: center;
+}
+
+footer h3 {
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+footer h3 a {
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+/* Desktop Styles */
+@media (min-width: 860px) {
+    body{   
+        background-size: 35%;
+    }
+
+    .content {
+        display: flex;
+        /* align-items: center; */
+    }
+
+    /* HEader Styles */
+    header {
+        margin-block-start: 4rem;
+        width: 45%;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        line-height: 60px;
+        width: 65%;
+    }
+
+    header .hide {
+        display: inline-block;
+        margin-block-start: 8.5rem;
+        color: var(--black);
+    }
+
+    .hide h2 {
+        font-weight: 500;
+        font-size: 1.5rem;
+        font-family: 'Nunito', sans-serif;
+        margin-block-end: 3rem;
+    }
+
+    .hide p {
+        font-weight: 400;
+        font-size: 1.2rem;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    .hide p a {
+        color: var(--blue);
+        text-decoration: underline;
+    }
+
+    .socials ul {
+        margin-block-start: 2rem;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: left;
+        gap: 0.4rem;
+    }
+
+    main {
+        width: 55%;
+        margin-block-start: 7rem;
+    }
+
+    form .name{
+        display: flex;
+        margin-inline: auto;
+        width: 80%;
+    }
+
+    form .name .first, .name .last{
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .name .last {
+        margin-inline-start: 3rem;
+    }
+
+    form .name input {
+        width:100%;
+    }
+
+    main form input[type="email"], form input[type="password"], input[type="text"] {
+        height: 3rem;
+    }
+
+    form button {
+        width: 80%;
+        height: 3rem;
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+
+    footer {
+        display: none;
+    }
+}
