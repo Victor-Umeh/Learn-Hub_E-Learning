@@ -53,7 +53,6 @@ body {
     background-image: url(../../assets/pattern-circle-irregular.svg);
     background-repeat: no-repeat;
     background-size: 55%;
-    background-position: top 0 left 0;
 }
 
 a {
@@ -81,8 +80,8 @@ header {
 header h1 {
     font-family: 'Nunito', sans-serif;
     margin-block-start: 2rem;
-    font-size: 1rem;
-    line-height: 26px;
+    font-size: clamp(1rem, 5vw, 3rem);
+    line-height: clamp(26px, 5vw, 78px);
     font-weight: 600;
     width: 39%;
 }
@@ -98,6 +97,7 @@ main {
 }
 
 main button.ggle {
+    margin-top: 15%;
     padding-block: 0.3rem;
     border: none;
     background-color: var(--input-fields-overlay);
@@ -183,7 +183,7 @@ footer h3 a {
 /* Desktop Styles */
 @media (min-width: 860px) {
     body{   
-        background-size: 35%;
+        background-size: 40%;
     }
 
     .content {
@@ -198,8 +198,6 @@ footer h3 a {
     }
 
     header h1 {
-        font-size: 3rem;
-        line-height: 60px;
         width: 65%;
     }
 
@@ -238,6 +236,10 @@ footer h3 a {
     main {
         width: 55%;
         margin-block-start: 7rem;
+    }
+
+    main button.ggle{
+        margin-top: 0;
     }
 
     form .name{
