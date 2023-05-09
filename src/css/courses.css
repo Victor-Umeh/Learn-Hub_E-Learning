@@ -115,7 +115,7 @@ body {
   height: 4.5vh;
   position: relative;
   margin-left: 0;
-  margin-top: 1.8em;
+  margin-top: 1em;
   border-radius: var(--radius);
   background: var(--very-light-gray);
   color: var(--gray);
@@ -129,8 +129,8 @@ body {
   background: transparent;
 }
 .search__input--btn {
-  background: transparent;
   position: absolute;
+  background: transparent;
   top: 50%;
   left: 18px;
   transform: translateY(-50%);
@@ -138,7 +138,6 @@ body {
   outline: 0;
 }
 .search__input--btn img {
-  mix-blend-mode: difference;
   width: 14px;
 }
 .header__user {
@@ -157,24 +156,6 @@ body {
   margin-top: 4px;
   color: var(--gray);
 }
-.subscription {
-  max-width: clamp(30rem, 100%, 100vw);
-  /* width: 100%; */
-  padding: 0.7em 1.5em 2.5em;
-  background: var(--type-purple);
-  color: var(--white);
-  border-radius: var(--radius);
-}
-.subscription p {
-  font-size: clamp(1.6rem, 5vw, 3.6rem);
-  font-weight: 700;
-  max-width: 413px;
-}
-.subscription span {
-  font-size: clamp(1rem, 3vw, 1.8rem);
-  display: block;
-  max-width: 390px;
-}
 .recent__courses-sect {
   display: flex;
   gap: 0.6em;
@@ -184,7 +165,7 @@ body {
 .recent__courses--header {
   font-size: clamp(1rem, 2vw, 1.4rem);
   font-weight: 500;
-  margin-top: 5rem;
+  margin-top: min(5vw, 5rem);
   margin-bottom: 1em;
 }
 .recent__courses--ctx {
@@ -204,7 +185,7 @@ body {
   background: url(../../assets/images/brick-wall.jpg);
 }
 .recent__courses--ctx-img {
-  /* max-width: 100%; */
+  max-width: 100%;
   aspect-ratio: 1;
   font-size: 0.7rem;
   color: var(--white);
@@ -406,10 +387,9 @@ body {
 @media (min-width: 800px) {
   /* USER */
   .user__main {
-    margin-left: calc(21% + 1vw);
     margin-top: 6rem;
-    width: 75%;
-    /* overflow-x: hidden; */
+    margin-left: 13%;
+    width: 80%;
   }
   .nav {
     background: var(--white);
@@ -540,7 +520,7 @@ body {
     right: 60px;
   }
   .user__main {
-    margin-left: 255px;
+    margin-left: 12%;
     width: 57%;
     height: 75vw;
   }
@@ -553,16 +533,5 @@ body {
     padding: 0 1.5em;
     border-left: 1px solid var(--gray);
     background: var(--white);
-  }
-  .subscription {
-    padding: 7rem;
-  }
-  .subscription p {
-    max-width: 470px;
-    margin-bottom: 1rem;
-  }
-  .subscription span {
-    max-width: 600px;
-    margin-bottom: 1rem;
   }
 }
