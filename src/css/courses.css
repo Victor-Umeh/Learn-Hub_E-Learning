@@ -115,34 +115,24 @@ body {
   height: 4.5vh;
   position: relative;
   margin-left: 0;
-  margin-top: 1.8em;
+  margin-top: 1em;
   border-radius: var(--radius);
   background: var(--very-light-gray);
   color: var(--gray);
-  overflow: hidden;
-}
-.search__input:focus-within {
-  outline: 4px solid hsl(0, 0%, 98%);
 }
 .search__input input {
-  width: 85%;
+  width: 86%;
   height: 100%;
   margin-left: 14%;
-  padding-left: 1rem;
   border: 0;
   outline: 0;
   background: transparent;
 }
 .search__input--btn {
   position: absolute;
-  display: grid;
-  place-content: center;
   background: transparent;
-  height: 100%;
-  width: 40px;
-  cursor: pointer;
   top: 50%;
-  left: 0;
+  left: 18px;
   transform: translateY(-50%);
   border: 0;
   outline: 0;
@@ -166,24 +156,6 @@ body {
   margin-top: 4px;
   color: var(--gray);
 }
-.subscription {
-  max-width: clamp(30rem, 100%, 100vw);
-  /* width: 100%; */
-  padding: 0.7em 1.5em 2.5em;
-  background: var(--type-purple);
-  color: var(--white);
-  border-radius: var(--radius);
-}
-.subscription p {
-  font-size: clamp(1.6rem, 5vw, 3.6rem);
-  font-weight: 700;
-  max-width: 413px;
-}
-.subscription span {
-  font-size: clamp(1rem, 3vw, 1.8rem);
-  display: block;
-  max-width: 390px;
-}
 .recent__courses-sect {
   display: flex;
   gap: 0.6em;
@@ -193,7 +165,7 @@ body {
 .recent__courses--header {
   font-size: clamp(1rem, 2vw, 1.4rem);
   font-weight: 500;
-  margin-top: 5rem;
+  margin-top: min(5vw, 5rem);
   margin-bottom: 1em;
 }
 .recent__courses--ctx {
@@ -213,7 +185,7 @@ body {
   background: url(../../assets/images/brick-wall.jpg);
 }
 .recent__courses--ctx-img {
-  /* max-width: 100%; */
+  max-width: 100%;
   aspect-ratio: 1;
   font-size: 0.7rem;
   color: var(--white);
@@ -415,10 +387,9 @@ body {
 @media (min-width: 800px) {
   /* USER */
   .user__main {
-    margin-left: calc(21% + 1vw);
     margin-top: 6rem;
-    width: 75%;
-    /* overflow-x: hidden; */
+    margin-left: min(22.4%, 16em);
+    width: 80%;
   }
   .nav {
     background: var(--white);
@@ -538,6 +509,9 @@ body {
     background: var(--very-light-gray);
     z-index: -1;
   }
+  .recent__courses-sect {
+    max-width: clamp(30rem, 95%, 100vw);
+  }
   .recent__courses--ctx-txt h3 {
     width: 23ch;
   }
@@ -549,7 +523,8 @@ body {
     right: 60px;
   }
   .user__main {
-    margin-left: 255px;
+    margin-left: 10.2%;
+    padding-inline: 8vw;
     width: 57%;
     height: 75vw;
   }
@@ -562,16 +537,5 @@ body {
     padding: 0 1.5em;
     border-left: 1px solid var(--gray);
     background: var(--white);
-  }
-  .subscription {
-    padding: 7rem;
-  }
-  .subscription p {
-    max-width: 470px;
-    margin-bottom: 1rem;
-  }
-  .subscription span {
-    max-width: 600px;
-    margin-bottom: 1rem;
   }
 }
