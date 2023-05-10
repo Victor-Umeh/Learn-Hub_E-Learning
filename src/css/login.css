@@ -1,0 +1,223 @@
+/* 
+! Mobile-First Approach
+- Variables
+- Reset
+- Base Styles
+- Utility Styles
+- Mobile Styles
+- Tablet Styles
+- Desktop Styles 
+*/
+
+/* Variables */
+:root {
+    /* Primary Colors */
+    --white: hsl(0, 0%, 100%);
+    --purple: hsl(273, 55%, 42%);
+    --black: hsla(0, 0%, 0%, 1);
+  
+    /* Secondary Colors */
+    --very-light-purple: hsl(274, 84%, 73%);
+    --very-light-gray: hsl(0, 0%, 81%);
+    --input-fields-overlay: hsl(273, 92%, 95%);
+  
+    /* Typography Colors */
+    --off-white: hsl(238, 100%, 93%);
+    --gray: hsl(0, 1%, 26%);
+    --type-purple: hsl(273, 85%, 52%);
+    --blue: hsl(223, 100%, 50%);
+    --user-type-heading: hsl(220, 43%, 11%);
+    --user-type-body: rgba(102, 112, 133, 1);
+    --bright-cyan: rgba(40, 214, 216, 1);
+    --bg-color: hsla(274, 62%, 80%, 1);
+    --h1-color: hsla(274, 85%, 52%, 1);
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+h1,
+p,
+ul {
+    margin: 0;
+}
+
+/* Base styles */
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+  }
+
+/* Utility Styles */
+.container {
+    width: min(90%, 1200px);
+    margin-inline: auto;
+}
+
+/* Mobile styles */
+/* Header style */
+header {
+    padding-block: 1rem;
+    padding-inline: 3rem;
+    background-color: var(--bg-color);
+    text-align: center;
+}
+
+header img {
+    width: 30%;
+    margin-block-end: 0.7rem;
+}
+
+header p {
+    color: var(--gray);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+header p span {
+    line-height: 40px;
+    font-size: 1.5rem;
+    background-color: var(--very-light-gray);
+    border-radius: 5px;
+    padding: 0.2rem 0.3rem;
+    color: var(--h1-color);
+}
+
+header p span.hub{
+    padding-inline: 0;
+    color: var(--black);
+}
+
+/* Main styles */
+main {
+    background-color: var(--white);
+    margin-inline: auto;
+    width: 85%;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--h1-color);
+    margin-block: 1.5rem;
+}
+
+form label {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.14rem;
+    font-weight: 500;
+    color: var(--black);
+}
+
+form input[type="email"], form input[type="password"] {
+    border: 0.05px solid rgba(0, 0, 0, 0.445);
+    background-color: var(--input-fields-overlay);
+    border-radius: 2px;
+    width: 80%;
+    height: 2rem;
+    font-family: 'Nunito', sans-serif;
+    margin-block: 0.5rem 1.5rem;
+}
+
+form .submit {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1.15rem;
+    color: var(--white);
+    margin-block: 1.5rem;
+}
+
+form .submit button {
+    border: none;
+    font-weight: 600;
+    font-size: 1.15rem;
+    padding: 0.2rem 1.5rem;
+    background-color: var(--h1-color);
+    border-radius: 5px;
+    color: var(--white);
+}
+
+form .submit a.create {
+    background-color: var(--black);
+    border-radius: 5px;
+    padding: 0.2rem 1.5rem;
+    margin-inline-start: 1.5rem;
+}
+
+form .tick {
+    font-family: 'Nunito', sans-serif;
+    color: var(--black);
+    font-size: 1.1rem;
+}
+
+form .tick input[type="radio"]:last-child {
+    margin-inline-start: 2rem;
+}
+
+/* Desktop Styles */
+@media (min-width: 860px) {
+    body {
+        display: flex;
+    }
+
+    header {
+        padding-block-start: 9rem;
+        width: 40%;
+        height: 100vh;
+    }
+
+    header img {
+        width: 60%;
+        margin-block-end: 3.5rem;
+    }
+
+    header p {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+    header p span {
+        font-size: 3rem;
+        line-height: 6rem;
+    }
+
+    /* MAin Style */
+    main {
+        margin-block-start: 7.5rem;
+        margin-inline: auto;
+        width: 55%;
+    }
+
+    form input[type="email"], form input[type="password"] {
+        border: 0.05px solid rgba(0, 0, 0, 0.445);
+        background-color: var(--input-fields-overlay);
+        border-radius: 5px;
+        width: 80%;
+        height: 3.5rem;
+        font-family: 'Nunito', sans-serif;
+        margin-block: 0.5rem 3.5rem;
+    }
+
+    form .submit button {
+        padding: 0.7rem 3rem;
+        border-radius: 5px;
+        font-size: 1.7rem;
+    }
+
+    form .submit a.create {
+        font-size: 1.7rem;
+        border-radius: 5px;
+        padding: 0.7rem 3rem;
+        margin-inline-start: 1.5rem;
+    }
+}
