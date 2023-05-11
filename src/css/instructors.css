@@ -52,6 +52,7 @@
 }
 html {
   font-size: 62.5%;
+  box-sizing: border-box;
 }
 a {
   text-decoration: none;
@@ -79,6 +80,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-block: 1.5rem;
 }
 .nav__logo {
   width: 128px;

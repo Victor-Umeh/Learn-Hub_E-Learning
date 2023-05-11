@@ -49,6 +49,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 html {
   font-size: 62.5%;
@@ -79,6 +80,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-block: 1.5rem;
 }
 .nav__logo {
   width: 128px;
@@ -538,11 +540,14 @@ body {
     background: var(--very-light-gray);
     z-index: -1;
   }
+  .subscription {
+    padding: 4rem;
+  }
   .recent__courses--ctx-txt h3 {
     width: 23ch;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1400px) {
   .search__input {
     position: fixed;
     top: 53px;
