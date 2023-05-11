@@ -525,12 +525,6 @@ body {
     width: min(1.4vw, 26.5px);
     min-width: 1.8ch;
   }
-  .desktop__nav--wrapper {
-    /* border: 1px solid red; */
-  }
-  .Desktop__nav--icons {
-    /* border: 1px solid red; */
-  }
   .dashboard__active {
     position: absolute;
     top: 0.8rem;
