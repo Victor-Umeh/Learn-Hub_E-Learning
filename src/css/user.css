@@ -49,6 +49,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 html {
   font-size: 62.5%;
@@ -79,6 +80,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-block: 1.5rem;
 }
 .nav__logo {
   width: 128px;
@@ -168,7 +170,6 @@ body {
 }
 .subscription {
   max-width: clamp(30rem, 100%, 100vw);
-  /* width: 100%; */
   padding: 0.7em 1.5em 2.5em;
   background: var(--type-purple);
   color: var(--white);
@@ -213,7 +214,6 @@ body {
   background: url(../../assets/images/brick-wall.jpg);
 }
 .recent__courses--ctx-img {
-  /* max-width: 100%; */
   aspect-ratio: 1;
   font-size: 0.7rem;
   color: var(--white);
@@ -418,7 +418,6 @@ body {
     margin-left: calc(21% + 1vw);
     margin-top: 6rem;
     width: 75%;
-    /* overflow-x: hidden; */
   }
   .nav {
     background: var(--white);
@@ -476,9 +475,8 @@ body {
     padding-block: 2.4rem;
     cursor: pointer;
     width: 13rem;
-    /* border: 1px solid red; */
   }
-  .Desktop__nav--icons p {
+  .Desktop__nav--icons a {
     font-size: 1.23rem;
     color: var(--gray);
   }
@@ -500,7 +498,6 @@ body {
     margin-top: 1.5rem;
     display: flex;
     align-items: center;
-    /* border: 1px solid red; */
   }
   .profile__name--wrapper {
     line-height: 0;
@@ -528,21 +525,43 @@ body {
     width: min(1.4vw, 26.5px);
     min-width: 1.8ch;
   }
+  .desktop__nav--wrapper {
+    /* border: 1px solid red; */
+  }
+  .Desktop__nav--icons {
+    /* border: 1px solid red; */
+  }
   .dashboard__active {
     position: absolute;
-    top: 1.2rem;
-    left: -1rem;
-    width: min(70vw, 140px);
-    height: 3.9rem;
+    top: 0.8rem;
+    right: 3rem;
+    width: 3px;
+    height: 5rem;
     border-radius: var(--radius);
-    background: var(--very-light-gray);
+    background: var(--loader-red);
+    transition: 0.6s;
     z-index: -1;
+  }
+  .Desktop__nav--icons:nth-child(1):hover ~ .dashboard__active {
+    top: 0.8rem;
+  }
+  .Desktop__nav--icons:nth-child(2):hover ~ .dashboard__active {
+    top: 7.3rem;
+  }
+  .Desktop__nav--icons:nth-child(3):hover ~ .dashboard__active {
+    top: 14.4rem;
+  }
+  .Desktop__nav--icons:nth-child(4):hover ~ .dashboard__active {
+    top: 20.9rem;
+  }
+  .subscription {
+    padding: 4rem;
   }
   .recent__courses--ctx-txt h3 {
     width: 23ch;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1400px) {
   .search__input {
     position: fixed;
     top: 53px;
