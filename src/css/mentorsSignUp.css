@@ -1,0 +1,137 @@
+*{
+  margin: 0px;
+  font-family: 'Inter', sans-serif;
+}
+html{
+  font-size: 16px;
+}
+h1{
+  margin-top:30% ;
+  text-align: center;
+  color: #444343;
+  font-size: 1.7rem;
+}
+.namees{
+  display: flex;
+  flex-direction: column;
+}
+.googleDiv{
+  margin-top: 10%;
+  display: flex;
+  background-color: #F4E8FE;
+  justify-content: center;
+  width: 80%;
+  margin-left: 10%;
+  border-radius: 5px;
+  padding: 2%;
+}
+form{
+  font-weight: 500;
+  margin-top: 5%;
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20%;
+}
+form input{
+  background-color: #F4E8FE;
+  border: solid 1px;
+  border-radius: 2px;
+  border-color: black;
+  height: 2.1rem;
+}
+label{
+  margin-top: 7%;
+}
+.or{
+  margin-top: 5%;
+  text-align: center;
+  font-size: 2rem;
+}
+.pattern{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 49%;
+}
+.pattern p{
+  font-size: 1.4rem;
+  background-color: aliceblue;
+  color: white;
+  margin-top: -50%;
+}
+.circle p{
+  width: 40%;
+  margin-block-start: 3rem;
+  font-weight: 600;
+  color: white;
+  margin-left: 5%;
+  font-size: 1.3rem;
+}
+.circle span{
+  display: none;
+}
+button{
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
+  background-color: #911DED;
+  padding: 2%;
+  color: white;
+  font-weight: 500;
+  border: solid 1px;
+  border-radius: 7px;
+}
+button:hover{
+  cursor: pointer;
+}
+footer{
+  margin-top: 3%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+a{
+  text-decoration: none;
+  color:#0047FF;
+}
+.terms{
+  margin-top: 5%;
+  text-align: center;
+}
+@media screen and (min-width: 900px) {
+  body{
+    background-size: 40%;
+  }
+  .circle p{
+    margin: 10% ;
+    font-size: 2.5rem;
+    width: 70%;
+  }
+  .entireBody{
+    display: flex;
+    flex-direction: row;
+  }
+  .rightHand{
+    width: 50%;
+  }
+  .leftHandSide{
+    width: 50%;
+    margin-top: -20%;
+  }
+  .or{
+margin-bottom: -10%;
+  }
+  h1{
+    font-size: 2.5rem;
+  }
+  .circle span{
+    display: block;
+    margin-top: 50%;
+    margin-left: 20%;
+    font-size: 1.7rem;
+  }
+  .pattern p{
+    font-size: 2.5rem;
+  }
+}
