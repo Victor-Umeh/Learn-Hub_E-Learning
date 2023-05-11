@@ -19,6 +19,22 @@
     <script defer src="src/js/script.js"></script>
 </head>
 <body>
+    <div id="modal">
+        <div class="sideNav">
+           <a href=""><img id="close" src="assets/close.png" alt=""></a> 
+            <h3>Choose Account Type</h3>
+            <div class="mentorOrStudentImg">
+                <a href="mentorSignUp.html"> <div class="mentorOrStudent">
+                    <img src="assets/teacher.svg" alt="">
+                    <p>mentor</p>
+                </div></a>
+                <a href="signup.html">  <div class="mentorOrStudent">
+                <img src="assets/student.svg" alt="">
+                <p>student</p></a>
+                </div>
+         </div>
+         </div>
+    </div>
     <header>
         <img src="./assets/images/login-avatar.png" alt="">
         <p>
@@ -34,7 +50,7 @@
             <input id="password" type="password">
             <div class="submit">
                 <button type="submit"><a href="user.html">Login</a></button>
-                <a class="create" href="signup.html">Sign up</a>
+                <a class="create" onclick="options()" > Sign up</a>
             </div>
             <div class="tick">
                 <input type="radio" name="post" id="">Mentor

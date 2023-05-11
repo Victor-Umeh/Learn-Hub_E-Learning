@@ -15,6 +15,11 @@ h1{
   display: flex;
   flex-direction: column;
 }
+body{
+  background-image: url(circle.svg);
+  background-repeat: no-repeat;
+  background-size: 47%;
+}
 .googleDiv{
   margin-top: 10%;
   display: flex;
@@ -48,25 +53,8 @@ label{
   text-align: center;
   font-size: 2rem;
 }
-.pattern{
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 49%;
-}
-.pattern p{
-  font-size: 1.4rem;
-  background-color: aliceblue;
-  color: white;
-  margin-top: -55%;
-  width: 60%;
-  margin-left: 20px;
-}
-.pattern img{
-  width: 80%;
-}
 .circle p{
-  width: 47%;
+  width: 40%;
   margin-block-start: 3rem;
   font-weight: 600;
   color: white;
@@ -104,7 +92,7 @@ a{
   margin-top: 5%;
   text-align: center;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {
   body{
     background-size: 40%;
   }
@@ -122,7 +110,7 @@ a{
   }
   .leftHandSide{
     width: 50%;
-    margin-top: -20%;
+    margin-top: -12%;
   }
   .or{
 margin-bottom: -10%;
@@ -132,11 +120,8 @@ margin-bottom: -10%;
   }
   .circle span{
     display: block;
-    margin-top: 50%;
-    margin-left: 20%;
+    margin-top: 40%;
+    margin-left: 10%;
     font-size: 1.7rem;
-  }
-  .pattern p{
-    font-size: 2.5rem;
   }
 }
