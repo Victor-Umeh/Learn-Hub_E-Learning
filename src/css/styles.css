@@ -269,6 +269,9 @@ body {
 .cta:hover {
   opacity: 0.7;
 }
+.footer__nav ul li a:hover {
+  text-decoration: underline;
+}
 a:hover {
   opacity: 0.7;
   transition: var(--transtion);
@@ -379,7 +382,7 @@ a:hover {
   .nav__about p {
     font-size: 1.4rem;
     font-weight: 300;
-    width: 40ch;
+    width: clamp(37ch, 28vw, 47ch);
   }
   .nav__footer {
     gap: 4em;
