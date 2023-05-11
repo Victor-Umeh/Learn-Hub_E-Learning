@@ -50,7 +50,7 @@ ul {
 
 /* Base styles */
 body {
-    background-image: url(../../assets/pattern-circle-irregular.svg);
+    background-image: url('https://res.cloudinary.com/dolfampoa/image/upload/v1681376856/bg-pattern-left-desktop_wh8szr.png');
     background-repeat: no-repeat;
     background-size: 55%;
 }
