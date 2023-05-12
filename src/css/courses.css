@@ -530,9 +530,6 @@ body {
   .recent__courses--ctx-txt h3 {
     width: 23ch;
   }
-  .home__work-sect {
-    /* max-width: 300px; */
-  }
 }
 @media (min-width: 1400px) {
   .search__input {
