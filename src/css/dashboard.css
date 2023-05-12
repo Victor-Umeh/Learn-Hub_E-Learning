@@ -137,6 +137,7 @@ body {
   font-size: 5.8rem;
   font-weight: 600;
   color: var(--type-purple);
+  cursor: pointer;
 }
 .content__header {
   font-size: clamp(2.3rem, 5vw, 3.8rem);
@@ -176,6 +177,9 @@ body {
   font-weight: 600;
   margin-inline: auto;
   color: var(--type-purple);
+}
+.file{
+  opacity: 0;
 }
 @media (min-width: 900px) {
   .nav {
