@@ -186,6 +186,9 @@ img.lib-img {
 }
 
 .lib-ment {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
   margin-block-start: 1rem;
   font-size: 1.3rem;
   color: var(--white);
