@@ -118,35 +118,25 @@ body {
   max-width: 280px;
   height: 4.5vh;
   position: relative;
-  margin-inline: auto;
-  margin-top: 1.8em;
+  margin-left: 0;
+  margin-top: 1em;
   border-radius: var(--radius);
   background: var(--very-light-gray);
   color: var(--gray);
-  overflow: hidden;
-}
-.search__input:focus-within {
-  outline: 4px solid hsl(0, 0%, 98%);
 }
 .search__input input {
-  width: 85%;
+  width: 86%;
   height: 100%;
   margin-left: 14%;
-  padding-left: 1rem;
   border: 0;
   outline: 0;
   background: transparent;
 }
 .search__input--btn {
   position: absolute;
-  display: grid;
-  place-content: center;
   background: transparent;
-  height: 100%;
-  width: 40px;
-  cursor: pointer;
   top: 50%;
-  left: 0;
+  left: 18px;
   transform: translateY(-50%);
   border: 0;
   outline: 0;
@@ -154,45 +144,42 @@ body {
 .search__input--btn img {
   width: 14px;
 }
-
-.header{
-  padding-top: 4rem;
-  color: var(--type-purple);
+.header__user {
+  margin-block: 2em;
+}
+.header__user h1 {
+  font-size: clamp(2rem, 7vw, 6.2rem);
   font-weight: 500;
-  font-size: 4rem;
-  font-family: 'Inter', sans-serif;
-  margin-bottom: 4rem;
-  text-align: center;
+  color: var(--gray);
+}
+.header__user h1 span {
+  color: var(--type-purple);
 }
 
-.content {
+/* Main Styles */
+.book__screen {
   display: grid;
-  grid-template-columns: repeat(autofit, min(3, 1fr));
-  width: 90%;
   place-items: center;
-  margin-inline: auto;
+  margin-block: 4rem;
+  gap: 2rem;
 }
 
-.content a .itemz{
-  display: flex;
-  flex-direction: column;
+.lib__item {
   background: #D6D2D2;
   border-radius: 15px;
-  align-items: center;
-  padding: 2rem ;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
   gap: 1.7rem;
+  align-items: center;
 }
-.itemz{
-  width: min(80%, 21rem);
-  min-width: 19rem;
-  margin-bottom: 4rem;
-}
-.itemz img{
+
+.lib__item img{
   width: 100%;
   height: 165px;
 }
 
-.itemz .info h2{
+.lib__item .info h2{
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   color: hsla(0, 1%, 26%, 1);
@@ -200,7 +187,7 @@ body {
   line-height: 0rem;
 }
 
-.itemz .info .stack{
+.lib__item .info .stack{
   margin-top: 1rem;
   color: #444343;
   display: flex;
@@ -218,20 +205,6 @@ body {
   height: 10px;
 }
 
-/* Media Query for main */
-@media (min-width: 600px) {
-  main {
-    width: 80%;
-    margin-left: min(18.4%, 20em);
-  }
-
-  .content {
-    display: grid;
-    grid-template-columns: repeat(3, 360px);
-    justify-content: center;
-  }
-}
-
 @media (min-width: 600px) {
   .nav {
     margin-top: 0;
@@ -242,10 +215,17 @@ body {
     width: 109px;
     height: 34px;
   }
+  /* Main */
+  .book__screen {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (min-width: 800px) {
-  .search__input {
-    display: none;
+  /* USER */
+  .user__main {
+    margin-top: 6rem;
+    margin-left: min(22.4%, 16em);
+    width: 80%;
   }
   .nav {
     background: var(--white);
@@ -260,6 +240,16 @@ body {
   }
   .nav__wrapper {
     display: none;
+  }
+  .search__input {
+    border: 1.5px solid var(--very-light-gray);
+    background: transparent;
+    position: fixed;
+    top: 53px;
+    right: 60px;
+  }
+  .search__input input {
+    font-size: 1.4rem;
   }
   .nav__wrapper {
     display: none;
@@ -295,10 +285,6 @@ body {
     font-size: 1.23rem;
     color: var(--gray);
   }
-  /* .Desktop__nav--icons:nth-child(1) :has(.nav__icons) {
-        color: var(--white); 
-        fill: var(--white);
-      } */
   .settings {
     margin-bottom: 0;
     position: absolute;
@@ -364,13 +350,29 @@ body {
   .Desktop__nav--icons:nth-child(4):hover ~ .dashboard__active {
     top: 20.9rem;
   }
+
+  /* Main */
+  .book__screen {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  } 
 }
 
-@media (min-width: 1300px) {
-  .user__main {
+@media (min-width: 1400px) {
+  .search__input {
+    position: fixed;
+    top: 53px;
+    right: 60px;
+  }
+
+  .book__screen {
+    margin-block: 1.5rem;
+  }
+
+  /* .user__main {
     margin-left: 10.2%;
     padding-inline: 8vw;
     width: 57%;
     height: 75vw;
-  }
+  } */
 }
