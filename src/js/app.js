@@ -1,20 +1,15 @@
 `use strict`;
 ScrollReveal({
-  reset: false,
+  reset: true,
   distance: "60px",
   duration: 800,
   delay: 400,
 });
-
-const revealTop = {
-  distance: "50%",
-  origin: "top",
-};
-transiton: "ease-in-out";
 const revealRight = {
-  distance: "50%",
-  origin: "right",
-  intervaL: "600",
+  distance: "150%",
+  origin: "top",
+  delay: 200,
+  //   transiton: "ease-in",
 };
 const revealImgRight = {
   delay: 600,
@@ -30,7 +25,7 @@ const coursesTop = {
   interval: 400,
 };
 
-ScrollReveal().reveal(".head__animation", revealImgRight);
+ScrollReveal().reveal(".head__animation", revealRight);
 ScrollReveal().reveal(".sect__head", revealImgRight);
 ScrollReveal().reveal(".head__courses-animation", revealImgRight);
 ScrollReveal().reveal(".courses__animation article", coursesTop);

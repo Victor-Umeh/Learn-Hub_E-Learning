@@ -119,9 +119,15 @@ body {
   color: var(--gray);
   font-weight: 800;
 }
-.header__main > span {
+.non__typed {
   background: var(--very-light-purple);
   color: var(--off-white);
+  padding-inline: 14px;
+  border-radius: var(--radius);
+}
+.header__main > .typed {
+  color: var(--off-white);
+  background: var(--very-light-purple);
   padding-inline: 14px;
   border-radius: var(--radius);
 }

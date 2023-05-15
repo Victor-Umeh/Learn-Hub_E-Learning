@@ -1,7 +1,9 @@
 "use strict";
+// import Typed from "typed.js";
+
 //SCROLL_REVEAL  USING  LIBRARY
 ScrollReveal({
-  reset: true,
+  reset: false,
   distance: "60px",
   duration: 800,
   delay: 400,
@@ -31,3 +33,12 @@ const revealBottom = {
 ScrollReveal().reveal(".header__animation", revealTop);
 ScrollReveal().reveal(".header__img", revealImgRight);
 ScrollReveal().reveal(".courses__details", revealBottom);
+
+const typed = new Typed(".typed", {
+  strings: ["Skills", "Career", "Value"],
+  typeSpeed: 100,
+  backSpeed: 100,
+  backDelay: 1000,
+  cursorChar: "",
+  loop: true,
+});

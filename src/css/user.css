@@ -480,10 +480,6 @@ body {
     font-size: 1.23rem;
     color: var(--gray);
   }
-  /* .Desktop__nav--icons:nth-child(1) :has(.nav__icons) {
-    color: var(--white); 
-    fill: var(--white);
-  } */
   .settings {
     margin-bottom: 0;
     position: absolute;

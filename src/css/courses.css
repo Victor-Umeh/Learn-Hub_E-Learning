@@ -541,7 +541,7 @@ body {
   }
   .user__main {
     margin-left: 18%;
-    width: 57%;
+    width: 60%;
     height: 110vw;
   }
   .home__work-sect {
@@ -550,7 +550,7 @@ body {
     right: 0;
     width: 22%;
     height: 100%;
-    padding: 0 1.5em;
+    padding: 0 s1.5em;
     border-left: 1px solid var(--gray);
     background: var(--white);
   }
