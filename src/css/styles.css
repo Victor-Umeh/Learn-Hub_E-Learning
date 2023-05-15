@@ -59,14 +59,16 @@ img {
 body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
+  overflow-x: hidden;
 }
 .wrapper {
   width: var(--mobile-width);
   margin: 0 auto;
 }
 .nav {
-  margin-top: 2em;
+  margin-top: 0.5em;
   width: 100%;
+  padding-block: 1rem;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -104,6 +106,7 @@ body {
 .header {
   position: relative;
   /* max-width: 688px; */
+  margin-top: 3rem;
 }
 .header__label {
   font-size: clamp(1.5rem, 3vw, 1.8rem);
@@ -288,6 +291,9 @@ a:hover {
     background: var(--very-light-gray);
     margin-top: 0;
     padding-block: 1.5rem;
+  }
+  .header {
+    margin-top: 10rem;
   }
   .enrollments {
     width: 225px;

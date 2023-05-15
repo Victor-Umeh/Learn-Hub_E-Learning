@@ -114,7 +114,7 @@ body {
   width: 66vw;
   min-width: 213px;
   max-width: 280px;
-  height: 4.5vh;
+  height: 40px;
   position: relative;
   margin-left: 0;
   margin-top: 1.8em;
@@ -416,7 +416,7 @@ body {
   /* USER */
   .user__main {
     margin-left: calc(21% + 1vw);
-    margin-top: 6rem;
+    /* margin-top: 6rem; */
     width: 75%;
   }
   .nav {
@@ -525,12 +525,6 @@ body {
     width: min(1.4vw, 26.5px);
     min-width: 1.8ch;
   }
-  .desktop__nav--wrapper {
-    /* border: 1px solid red; */
-  }
-  .Desktop__nav--icons {
-    /* border: 1px solid red; */
-  }
   .dashboard__active {
     position: absolute;
     top: 0.8rem;
@@ -568,9 +562,9 @@ body {
     right: 60px;
   }
   .user__main {
-    margin-left: 255px;
+    margin-left: 18%;
     width: 57%;
-    height: 75vw;
+    height: 110vw;
   }
   .home__work-sect {
     position: fixed;

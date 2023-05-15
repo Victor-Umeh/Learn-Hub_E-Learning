@@ -12,7 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/48606a42ac.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="src/css/styles.css">
-    <script defer src="src/js/script.js"></script>
+    <script defer src="src/js/index.js"></script>
+
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -30,27 +33,30 @@
             <button class="cta">Sign Up</button>
         </div>
     </nav>
-    <main class="main wrapper">
-        <p class="header__label">Find your best teachers...</p>
-        <header class="header">
+    <header class="header wrapper">
+        <div class="header__animation">
+            <p class="header__label">Find your best teachers...</p>
             <h1 class="header__main">
                 Grow Your <span>Skills,</span><br>
                 Define Your <br>
                 <span>Future</span>
             </h1>
-            <img class="header__img" src="assets/icons/girl-illustration.svg" alt="girl-illustration" loading="lazy">
-            <div class="header__cta-sect">
-                <button class="header__cta cta"><a href="login.html">Log In</a></button>
-                <article class="enrollments">
-                    <div><img src="assets/images/girl-headphones.jpg" alt=""></div>
-                    <div><img src="assets/images/girl.jpg" alt=""></div>
-                    <div><img src="assets/images/headwarmer-girl.jpg" alt=""></div>
-                    <div><img src="assets/images/shades-guy.jpg" alt=""></div>
-                    <div><img src="assets/images/whiteshirt-guy.jpg" alt=""></div>
-                    <p><span>2k+</span> Environments</p>
-                </article>
-            </div>
-        </header>
+        </div>
+        <img class="header__img" src="assets/icons/girl-illustration.svg" alt="girl-illustration" loading="lazy">
+        <div class="header__cta-sect header__animation">
+            <button class="header__cta cta"><a href="login.html">Log In</a></button>
+            <article class="enrollments">
+                <div><img src="assets/images/girl-headphones.jpg" alt=""></div>
+                <div><img src="assets/images/girl.jpg" alt=""></div>
+                <div><img src="assets/images/headwarmer-girl.jpg" alt=""></div>
+                <div><img src="assets/images/shades-guy.jpg" alt=""></div>
+                <div><img src="assets/images/whiteshirt-guy.jpg" alt=""></div>
+                <p><span>2k+</span> Environments</p>
+            </article>
+        </div>
+    </header>
+    <main class="main wrapper">
+
         <section class="courses">
             <div class="courses__details">
                 <svg class="courses__icons" width="35" height="35" viewBox="0 0 35 35" fill="none"
@@ -91,13 +97,13 @@
         </section>
     </main>
     <footer class="footer">
-        <img class="wrapper footer__logo" src="assets/LEARN-HUB-FOOTER.svg" alt="">
+        <img class="wrapper footer__logo" src="assets/icons/LEARN-HUB-FOOTER.svg" alt="">
         <nav class="nav__footer wrapper">
             <div class="nav__about">
                 <h3>About Us</h3>
                 <p>Learn Hub is a user-friendly e-learning web application designed to make online learning accessible
                     for students of all ages and backgrounds. The app provides a flexible and customizable learning
-                    experience with a wide range of courses and resources available to choose from. p>
+                    experience with a wide range of courses and resources available to choose from. </p>
             </div>
 
             <div class="footer__nav">

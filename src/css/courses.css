@@ -114,14 +114,16 @@ body {
   width: 66vw;
   min-width: 213px;
   max-width: 280px;
-  height: 4.5vh;
+  height: 40px;
   position: relative;
   margin-left: 0;
-  margin-top: 1em;
+  margin-top: 1.8em;
   border-radius: var(--radius);
   background: var(--very-light-gray);
   color: var(--gray);
+  overflow: hidden;
 }
+
 .search__input input {
   width: 86%;
   height: 100%;
@@ -530,21 +532,17 @@ body {
   .recent__courses--ctx-txt h3 {
     width: 23ch;
   }
-  .home__work-sect {
-    max-width: 300px;
-  }
 }
 @media (min-width: 1400px) {
   .search__input {
     position: fixed;
     top: 53px;
-    right: 60px;
+    right: 50px;
   }
   .user__main {
-    margin-left: 10.2%;
-    padding-inline: 8vw;
+    margin-left: 18%;
     width: 57%;
-    height: 75vw;
+    height: 110vw;
   }
   .home__work-sect {
     position: fixed;
