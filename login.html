@@ -12,6 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700;800&family=Nunito:wght@500;600&family=Poppins:wght@400;500;600;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
 
+    <!-- Bootstrap Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="src/css/login.css">
 
@@ -19,11 +22,57 @@
     <script defer src="src/js/script.js"></script>
 </head>
 <body>
-    <header>
-        <img src="./assets/images/login-avatar.png" alt="">
-        <p>
-            Quick and Easy Learning with <br><span>Learn<span class="hub">Hub</span></span>
-        </p>
+    <div id="modal">
+        <div class="sideNav">
+           <a href=""><img id="close" onclick="close()" src="assets/close.png" alt=""></a> 
+            <h3>Choose Account Type</h3>
+            <div class="mentorOrStudentImg">
+                <a href="mentorSignUp.html"> <div class="mentorOrStudent">
+                    <img src="assets/teacher.svg" alt="">
+                    <p>mentor</p>
+                </div></a>
+                <a href="signup.html">  <div class="mentorOrStudent">
+                <img src="assets/student.svg" alt="">
+                <p>student</p></a>
+                </div>
+         </div>
+         </div>
+    </div>
+    <header id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <img src="./assets/images/login-avatar.png" alt="">
+                <p>
+                    Quick and Easy Learning with <br><span>Learn<span class="hub">Hub</span></span>
+                </p>
+                <!-- <img src="..." class="d-block w-100" alt="..."> -->
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="assets/images/login-avatar2.png" alt="">
+                <p>
+                    Discover new study materials with <br><span>Learn<span class="hub">Hub</span></span>
+                </p>
+                <!-- <img src="..." class="d-block w-100" alt="..."> -->
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="assets/images/login-avatar3.svg" alt="">
+                <p>
+                    Connect with other students at <br><span>Learn<span class="hub">Hub</span></span>
+                </p>
+                <!-- <img src="..." class="d-block w-100" alt="..."> -->
+            </div>
+            <!-- Slide 4 -->
+            <div class="carousel-item">
+                <img src="assets/images/login-avatar4.png" alt="">
+                <p>
+                    Learn at your pace with <br><span>Learn<span class="hub">Hub</span></span>
+                </p>
+                <!-- <img src="..." class="d-block w-100" alt="..."> -->
+            </div>
+        </div>
     </header>
     <main>
         <h1>Login</h1>
@@ -42,4 +91,6 @@
             </div>
         </form>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </body>
