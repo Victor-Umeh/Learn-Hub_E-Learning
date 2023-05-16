@@ -1,0 +1,114 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+}
+.header{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600px;
+    font-size: 30px;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 3%;
+}
+.upload__form{
+    margin: 0 auto;
+    width: 12.9rem;
+    height: 13.2rem;
+    background: #DAC6F3;
+}
+.img__upload{
+    position: relative;
+    height: 100%;
+}
+.img__upload input{
+    display: grid;
+    place-content: center;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    position: relative;
+}
+.upload__label{
+    display: block;
+    text-align: center;
+    margin-inline: auto;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #911DED;
+}
+input[type="file"]{
+    opacity: 0;
+}
+.upload__icon{
+    position: absolute;
+    top: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6.2rem;
+    height: 5.5rem;
+}
+.upload__icon :nth-child(1){
+    position: absolute;
+    left: 50%;
+    top: 1.4rem;
+    transform: translateX(-50%);
+    width: 2rem;
+
+}
+.upload__icon :nth-child(2){
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 7.3rem;
+}
+.icon__label{
+    display: block;
+}
+#msg{
+    border-radius: .7rem;
+    font-weight: 500;
+    font-size: 2.5rem;
+    padding: 2rem 1.2rem;
+    color: #575757;
+    border: 1px solid #000000;
+    background: #FFFFFF;
+    width: 100%;
+    resize: none;
+    cursor: pointer;
+}
+.continue__wrapper{
+    width: 100%;
+    max-width: inherit;
+    position: relative;
+    margin-top: 2rem;
+}
+#continue{
+    position: absolute;
+    right: 0;
+    outline: none;
+    border: none;
+    padding: 1.3rem 3rem;
+    background-color: #911DED;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+   }
+.message-box{
+    margin: 2rem auto 0;
+    width: 90%;
+    max-width: 1000px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}

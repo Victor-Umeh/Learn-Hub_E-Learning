@@ -177,6 +177,9 @@ body {
   margin-inline: auto;
   color: var(--type-purple);
 }
+.file{
+  opacity: 0;
+}
 @media (min-width: 900px) {
   .nav {
     background: var(--very-light-gray);

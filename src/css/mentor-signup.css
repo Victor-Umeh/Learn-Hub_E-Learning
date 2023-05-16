@@ -15,11 +15,6 @@ h1{
   display: flex;
   flex-direction: column;
 }
-body{
-  background-image: url(../../assets/pattern-circle-irregular.svg);
-  background-repeat: no-repeat;
-  background-size: 47%;
-}
 .googleDiv{
   margin-top: 10%;
   display: flex;
@@ -41,8 +36,8 @@ form{
 form input{
   background-color: #F4E8FE;
   border: solid 1px;
-  border-radius: 4px;
-  border-color: grey;
+  border-radius: 2px;
+  border-color: black;
   height: 2.1rem;
 }
 label{
@@ -53,8 +48,25 @@ label{
   text-align: center;
   font-size: 2rem;
 }
+.pattern{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 49%;
+}
+.pattern p{
+  font-size: 1.4rem;
+  background-color: aliceblue;
+  color: white;
+  margin-top: -55%;
+  width: 60%;
+  margin-left: 20px;
+}
+.pattern img{
+  width: 80%;
+}
 .circle p{
-  width: 40%;
+  width: 47%;
   margin-block-start: 3rem;
   font-weight: 600;
   color: white;
@@ -76,6 +88,9 @@ button{
   border: solid 1px;
   border-radius: 7px;
 }
+button a{
+  color: white;
+}
 button:hover{
   cursor: pointer;
 }
@@ -92,7 +107,7 @@ a{
   margin-top: 5%;
   text-align: center;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 900px) {
   body{
     background-size: 40%;
   }
@@ -110,7 +125,7 @@ a{
   }
   .leftHandSide{
     width: 50%;
-    margin-top: -12%;
+    margin-top: -20%;
   }
   .or{
 margin-bottom: -10%;
@@ -120,8 +135,11 @@ margin-bottom: -10%;
   }
   .circle span{
     display: block;
-    margin-top: 40%;
-    margin-left: 10%;
+    margin-top: 50%;
+    margin-left: 20%;
     font-size: 1.7rem;
+  }
+  .pattern p{
+    font-size: 2.5rem;
   }
 }
