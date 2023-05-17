@@ -114,16 +114,14 @@ body {
   width: 66vw;
   min-width: 213px;
   max-width: 280px;
-  height: 40px;
+  height: 4.5vh;
   position: relative;
   margin-left: 0;
-  margin-top: 1.8em;
+  margin-top: 1em;
   border-radius: var(--radius);
   background: var(--very-light-gray);
   color: var(--gray);
-  overflow: hidden;
 }
-
 .search__input input {
   width: 86%;
   height: 100%;
@@ -180,13 +178,13 @@ body {
   background-repeat: no-repeat;
 }
 .courses--ctx-img-1 {
-  background: url(../../assets/images/workspace.jpg);
+  background: url(../../assets/images/jesse.png);
 }
 .courses--ctx-img-2 {
-  background: url(../../assets/images/speaker.jpg);
+  background: url(../../assets/images/Ramnaan.png);
 }
 .courses--ctx-img-3 {
-  background: url(../../assets/images/brick-wall.jpg);
+  background: url(../../assets/images/Sadiq.png);
 }
 .recent__courses--ctx-img {
   max-width: 100%;
@@ -291,8 +289,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20px;
-  height: 20px;
+  width: 35px;
+  height: 35px;
   border-radius: 2em;
   padding: 0.8rem;
 }
@@ -312,8 +310,8 @@ body {
   stroke: var(--loader-green);
 }
 .homework svg {
-  width: 17px;
-  height: 16px;
+  width: 26px;
+  height: 26px;
 }
 .homework__details {
   display: flex;
@@ -537,12 +535,13 @@ body {
   .search__input {
     position: fixed;
     top: 53px;
-    right: 50px;
+    right: 60px;
   }
   .user__main {
-    margin-left: 18%;
-    width: 60%;
-    height: 110vw;
+    margin-left: 10.2%;
+    padding-inline: 8vw;
+    width: 57%;
+    height: 75vw;
   }
   .home__work-sect {
     position: fixed;
@@ -550,7 +549,7 @@ body {
     right: 0;
     width: 22%;
     height: 100%;
-    padding: 0 s1.5em;
+    padding: 0 1.5em;
     border-left: 1px solid var(--gray);
     background: var(--white);
   }

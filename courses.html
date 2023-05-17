@@ -12,7 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/courses.css">
     <script src="https://kit.fontawesome.com/48606a42ac.js" crossorigin="anonymous"></script>
-    <script defer src="src/js/script.js"></script>
+
+    <!-- ANIMATION LIBRARY -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script defer src="src/js/app.js"></script>
 </head>
 
 <body>
@@ -63,7 +66,7 @@
                             d="M0 0V13H5.57143V0H0ZM6.5 0V4.64286H12.0714V0H6.5ZM13 0V8.35714H18.5714V0H13ZM6.5 5.57143V13H12.0714V5.57143H6.5ZM13 9.28571V13H18.5714V9.28571H13Z"
                             fill="#444343" />
                     </svg>
-                    <a href="dashboard.html">Dashboard</a>
+                    <a href="user.html">Dashboard</a>
                 </button>
                 <button class="Desktop__nav--icons">
                     <svg class="nav__icons" width="" height="" viewBox="0 0 24 24" fill="none"
@@ -90,7 +93,7 @@
                             d="M1 4C0.45 4 0 4.45 0 5V18C0 19.1 0.9 20 2 20H15C15.55 20 16 19.55 16 19C16 18.45 15.55 18 15 18H3C2.45 18 2 17.55 2 17V5C2 4.45 1.55 4 1 4ZM18 0H6C4.9 0 4 0.9 4 2V14C4 15.1 4.9 16 6 16H18C19.1 16 20 15.1 20 14V2C20 0.9 19.1 0 18 0ZM16 9H8C7.45 9 7 8.55 7 8C7 7.45 7.45 7 8 7H16C16.55 7 17 7.45 17 8C17 8.55 16.55 9 16 9ZM12 13H8C7.45 13 7 12.55 7 12C7 11.45 7.45 11 8 11H12C12.55 11 13 11.45 13 12C13 12.55 12.55 13 12 13ZM16 5H8C7.45 5 7 4.55 7 4C7 3.45 7.45 3 8 3H16C16.55 3 17 3.45 17 4C17 4.55 16.55 5 16 5Z"
                             fill="#444343" />
                     </svg>
-                    <a href="">Library</a>
+                    <a href="library.html">Library</a>
                 </button>
                 <button class="Desktop__nav--icons settings">
                     <svg class="nav__icons" width="22" height="23" viewBox="0 0 27 27" fill="none"
@@ -133,11 +136,11 @@
                 <input type="text" placeholder="Search  ">
                 <button class="search__input--btn"><img src="assets/user page icons/search-icon.svg" alt=""></button>
             </form>
-            <header class="header__user">
+            <header class="header__user sect__head">
                 <h1><span>Courses<span></h1>
             </header>
-            <h2 class="recent__courses--header">Recent Course</h2>
-            <section class="recent__courses-sect">
+            <h2 class="recent__courses--header head__animation">Recent Course</h2>
+            <section class="recent__courses-sect courses__animation">
                 <!-- 1 -->
                 <article class="recent__courses--ctx">
                     <div class="recent__courses--ctx-img courses--ctx-img-1">
@@ -219,8 +222,8 @@
                     </div>
                 </article>
             </section>
-            <h2 class="recent__courses--header">Recent Course</h2>
-            <section class="recent__courses-sect">
+            <h2 class="recent__courses--header head__animation">Recent Course</h2>
+            <section class="recent__courses-sect courses__animation">
                 <!-- 1 -->
                 <article class="recent__courses--ctx">
                     <div class="recent__courses--ctx-img courses--ctx-img-1">
@@ -302,8 +305,8 @@
                     </div>
                 </article>
             </section>
-            <h2 class="recent__courses--header">Recent Course</h2>
-            <section class="recent__courses-sect">
+            <h2 class="recent__courses--header head__animation">Recent Course</h2>
+            <section class="recent__courses-sect courses__animation">
                 <!-- 1 -->
                 <article class="recent__courses--ctx">
                     <div class="recent__courses--ctx-img courses--ctx-img-1">
@@ -392,7 +395,7 @@
                 <!-- 1 -->
                 <div class="homework homework-1">
                     <div class="homework__icon icon-1">
-                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M8.19255 8.29107V10.488H4.89714V8.29107M2.81004 8.29107H10.2796C10.8948 8.29107 11.2025 8.29107 11.4374 8.17135C11.6441 8.06603 11.8122 7.89799 11.9175 7.6913C12.0372 7.45632 12.0372 7.14872 12.0372 6.53352V2.35933C12.0372 1.74413 12.0372 1.43653 11.9175 1.20155C11.8122 0.994861 11.6441 0.826816 11.4374 0.721502C11.2025 0.601776 10.8948 0.601776 10.2796 0.601776H2.81004C2.19484 0.601776 1.88724 0.601776 1.65227 0.721502C1.44558 0.826816 1.27753 0.994861 1.17222 1.20155C1.05249 1.43653 1.05249 1.74413 1.05249 2.35933V6.53352C1.05249 7.14872 1.05249 7.45632 1.17222 7.6913C1.27753 7.89799 1.44558 8.06603 1.65227 8.17135C1.88724 8.29107 2.19484 8.29107 2.81004 8.29107Z"
                                 stroke="#175CD3" stroke-width="1.09847" stroke-linecap="round"

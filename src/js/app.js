@@ -9,7 +9,6 @@ const revealRight = {
   distance: "150%",
   origin: "top",
   delay: 200,
-  //   transiton: "ease-in",
 };
 const revealImgRight = {
   delay: 600,

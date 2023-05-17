@@ -36,9 +36,9 @@ ScrollReveal().reveal(".courses__details", revealBottom);
 
 const typed = new Typed(".typed", {
   strings: ["Skills", "Career", "Value"],
-  typeSpeed: 100,
-  backSpeed: 100,
-  backDelay: 1000,
+  typeSpeed: 110,
+  backSpeed: 90,
+  backDelay: 600,
   cursorChar: "",
   loop: true,
 });
