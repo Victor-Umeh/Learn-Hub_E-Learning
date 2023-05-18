@@ -36,6 +36,7 @@ form{
 form input{
   background-color: #F4E8FE;
   border: solid 1px;
+  padding-inline-start: 1rem;
   border-radius: 2px;
   border-color: black;
   height: 2.1rem;
@@ -52,11 +53,13 @@ label{
   position: relative;
   top: 0;
   left: 0;
-  width: 49%;
+  width: 65%;
 }
 .pattern p{
-  font-size: 1.4rem;
+  font-size: clamp(1.4rem, 5vw, 3rem);
   background-color: aliceblue;
+  line-height: clamp(26px, 5vw, 78px);
+  font-weight: 600;
   color: white;
   margin-top: -55%;
   width: 60%;
@@ -110,6 +113,12 @@ a{
 @media screen and (min-width: 900px) {
   body{
     background-size: 40%;
+  }
+  .pattern{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 49%;
   }
   .circle p{
     margin: 10% ;

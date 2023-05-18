@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/css/mentor-signup.css" />
+    <script src="/src/js/mentorSignup.js" defer></script>
   </head>
   <body>
     <div class="pattern">
@@ -26,31 +27,26 @@
       </div>
       <div class="leftHandSide">
         <h1>Sign up as a Mentor</h1>
-        <div class="googleDiv">
-       
-          <p>Sign up with Google</p>
-        </div>
-        <p class="or">or</p>
-        <form action="">
+        <form id="mentorForm">
           <div class="namees">
             <label for="firstName">First Name</label>
             <input type="text" id="firstName" />
-            <label for="laststName">Last Name</label>
+            <label for="lastName">Last Name</label>
             <input type="text" id="lastName" />
           </div>
           <label for="email">Email</label>
           <input type="email" id="email" />
           <label for="passcode">Password</label>
           <input type="password" id="passcode" />
+          <div class="terms">
+            <input type="checkbox" id="check" />
+            <label for="check"
+              >I agree to the <a href="">Terms of Service</a> and
+              <a href="">Privacy Notice</a>
+            </label>
+          </div>
+          <button> Sign me up</button> 
         </form>
-        <div class="terms">
-          <input type="checkbox" id="check" />
-          <label for="check"
-            >I agree to the <a href="">Terms of Service</a> and
-            <a href="">Privacy Notice</a>
-          </label>
-        </div>
-        <a href="build-your-profile.html"><button> Sign me up</button></a> 
         <footer>Already have an account? <a href=""> Log in</a></footer>
       </div>
     </div>

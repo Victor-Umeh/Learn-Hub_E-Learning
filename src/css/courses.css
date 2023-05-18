@@ -447,6 +447,23 @@ body {
   width: 90%;
   background: var(--loader-green);
 }
+
+/* Timer styles */
+.watch{
+  position: relative;
+  text-align: right;
+  top: 15px;
+  /* right: 60px; */
+  color: hsla(0, 1%, 41%, 1);
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  margin-left: 6rem;
+  overflow: hidden;
+}
+.timer {
+  font-size: 30px;
+}
 @media (min-width: 600px) {
   .nav {
     margin-top: 0;
@@ -590,7 +607,7 @@ body {
   }
   .dashboard__active {
     position: absolute;
-    top: 0.8rem;
+    top: 7.5rem;
     right: 3rem;
     width: 3px;
     height: 5rem;
@@ -620,6 +637,12 @@ body {
   /* END------------ */
   .recent__courses--ctx-txt h3 {
     width: 23ch;
+  }
+  /* Timer Styles */
+  .watch {
+    position: fixed;
+    top: 20px;
+    right: 60px;
   }
 }
 @media (min-width: 1400px) {
