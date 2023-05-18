@@ -298,6 +298,9 @@ body {
     width: 109px;
     height: 34px;
   }
+  .overlay {
+    display: none;
+  }
   /* Main */
   .book__screen {
     grid-template-columns: repeat(2, 1fr);
@@ -335,95 +338,6 @@ body {
     margin-bottom: 2rem;
     width: 137px;
   }
-  /* .Desktop__nav {
-    display: flex;
-    flex-direction: column;
-  }
-  .desktop__nav--wrapper {
-    position: relative;
-    margin-inline: auto;
-    border-bottom: 1px solid var(--gray);
-    width: 75%;
-    height: 630px;
-  }
-  .Desktop__nav--icons {
-    all: unset;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 1rem;
-    padding-block: 2.4rem;
-    cursor: pointer;
-    width: 13rem;
-  }
-  .Desktop__nav--icons a {
-    font-size: 1.23rem;
-    color: var(--gray);
-  }
-  .settings {
-    margin-bottom: 0;
-    position: absolute;
-    bottom: 0;
-  }
-  .settings p {
-    font-size: 1.6rem;
-  }
-  .profile {
-    width: 75%;
-    margin-inline: auto;
-    margin-top: 1.5rem;
-    display: flex;
-    align-items: center;
-  }
-  .profile__name--wrapper {
-    line-height: 0;
-    margin-right: auto;
-    margin-bottom: auto;
-  }
-  .profile__name {
-    font-size: clamp(1rem, 1.2vw, 1.3rem);
-  }
-  .profile__email {
-    display: block;
-    font-size: clamp(0.6rem, 1vw, 1rem);
-    font-weight: 500;
-    color: var(--gray);
-  }
-  .profile img {
-    width: min(3.3vw, 35px);
-    margin-right: 3px;
-  }
-  .profile__arrow {
-    display: none;
-    margin-right: auto;
-  }
-  .profile__icon {
-    width: min(1.4vw, 26.5px);
-    min-width: 1.8ch;
-  }
-  .dashboard__active {
-    position: absolute;
-    top: 14.4rem;
-    right: 3rem;
-    width: 3px;
-    height: 5rem;
-    border-radius: var(--radius);
-    background: var(--loader-red);
-    transition: 0.6s;
-    z-index: -1;
-  }
-  .Desktop__nav--icons:nth-child(1):hover ~ .dashboard__active {
-    top: 0.8rem;
-  }
-  .Desktop__nav--icons:nth-child(2):hover ~ .dashboard__active {
-    top: 7.3rem;
-  }
-  .Desktop__nav--icons:nth-child(3):hover ~ .dashboard__active {
-    top: 14.4rem;
-  }
-  .Desktop__nav--icons:nth-child(4):hover ~ .dashboard__active {
-    top: 20.9rem;
-  } */
 
   /* BEGIN------------ ###################*/
   .hamburger__btn {
