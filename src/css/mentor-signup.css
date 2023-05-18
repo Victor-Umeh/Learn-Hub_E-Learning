@@ -41,6 +41,9 @@ form input{
   border-color: black;
   height: 2.1rem;
 }
+input[type="checkbox"] {
+  height: unset;
+}
 label{
   margin-top: 7%;
 }
