@@ -36,19 +36,19 @@ ScrollReveal().reveal(".courses__animation article", coursesTop);
 ScrollReveal().reveal(".header__user", revealRight);
 
 //----------------HAMBURGER---------------
-hamburger.addEventListener("click", () => {
+hamburger?.addEventListener("click", () => {
   hamburger.classList.toggle("toggle");
   navMenu.classList.toggle("active");
   overlay.classList.toggle("active");
 });
 
-overlay.addEventListener("click", () => {
+overlay?.addEventListener("click", () => {
   hamburger.classList.remove("toggle");
   navMenu.classList.remove("active");
   overlay.classList.remove("active");
 });
 
-navLinks.forEach((n) => {
+navLinks?.forEach((n) => {
   n.addEventListener("click", () => {
     navMenu.classList.remove("active");
     hamburger.classList.remove("toggle");

@@ -28,6 +28,7 @@ input.addEventListener("change", function (event) {
       // Create an image element
       const img = document.createElement("img");
       // Set the source of the image element to the data URL
+      img.setAttribute("for", "upload");
       img.classList.add("preview__image");
       img.src = e.target.result;
       console.log(img);
@@ -39,7 +40,6 @@ input.addEventListener("change", function (event) {
       // img.innerHTML = "";
       preview.appendChild(img);
     };
-
     // Read the file as a data URL
     reader.readAsDataURL(file);
   }
