@@ -27,15 +27,16 @@ input.addEventListener("change", function (event) {
     reader.onload = function (e) {
       // Create an image element
       const img = document.createElement("img");
-
       // Set the source of the image element to the data URL
-      img.className = "preview__image";
+      img.classList.add("preview__image");
       img.src = e.target.result;
-
       console.log(img);
       // Append the image element to the preview container
       const preview = document.getElementById("imagePreview");
-      preview.innerHTML = "";
+      preview.innerHtml ? (preview.innerHTML = "") : preview;
+      console.log(preview);
+      console.log(preview.innerHtml);
+      // img.innerHTML = "";
       preview.appendChild(img);
     };
 
