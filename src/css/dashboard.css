@@ -129,7 +129,6 @@ body {
 }
 .activities p {
   font-size: clamp(2rem, 5vw, 2.5rem);
-
   font-weight: 500;
   color: var(--gray);
 }
@@ -177,8 +176,9 @@ body {
   margin-inline: auto;
   color: var(--type-purple);
 }
-.file{
-  opacity: 0;
+.file {
+  /* opacity: 0; */
+  display: none;
 }
 @media (min-width: 900px) {
   .nav {

@@ -1,6 +1,5 @@
 "use strict";
-// import Typed from "typed.js";
-
+// import Typed Effect from "typed.js";
 //SCROLL_REVEAL  USING  LIBRARY
 ScrollReveal({
   reset: false,
@@ -12,7 +11,6 @@ const revealTop = {
   distance: "50%",
   origin: "top",
 };
-transiton: "ease-in-out";
 const revealRight = {
   distance: "50%",
   origin: "right",
@@ -35,7 +33,7 @@ ScrollReveal().reveal(".header__img", revealImgRight);
 ScrollReveal().reveal(".courses__details", revealBottom);
 
 const typed = new Typed(".typed", {
-  strings: ["Skills", "Career", "Value"],
+  strings: ["Skills", "Career", "Values"],
   typeSpeed: 110,
   backSpeed: 90,
   backDelay: 600,
