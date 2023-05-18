@@ -124,7 +124,7 @@ body {
   transition: all 400ms;
 }
 .desktop__nav--wrapper {
-  position: absolute;
+  position: fixed;
   top: -3.2rem;
   right: 0;
   background: rgb(255, 255, 255, 1);
@@ -194,6 +194,7 @@ body {
   background: var(--very-light-gray);
   color: var(--gray);
   overflow: hidden;
+  z-index: 100;
 }
 .search__input:focus-within {
   outline: 4px solid hsl(0, 0%, 98%);

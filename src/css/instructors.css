@@ -124,7 +124,7 @@ body {
   transition: all 400ms;
 }
 .desktop__nav--wrapper {
-  position: absolute;
+  position: fixed;
   top: -3.2rem;
   right: 0;
   background: rgb(255, 255, 255, 1);
@@ -195,6 +195,7 @@ body {
   background: var(--very-light-gray);
   color: var(--gray);
   overflow: hidden;
+  z-index: 100;
 }
 .search__input:focus-within {
   outline: 4px solid hsl(0, 0%, 98%);
@@ -228,7 +229,6 @@ body {
 
 .header__user {
   margin-bottom: 4em;
-  text-align: center;
 }
 .header__user h1 {
   font-size: clamp(2rem, 7vw, 6.2rem);
@@ -298,18 +298,15 @@ body {
     width: 109px;
     height: 34px;
   }
-  .overlay {
+  /* .overlay {
     display: none;
-  }
+  } */
   /* Main */
   .book__screen {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 800px) {
-  .search__input {
-    display: none;
-  }
   /* USER */
   .user__main {
     margin-top: 6rem;
