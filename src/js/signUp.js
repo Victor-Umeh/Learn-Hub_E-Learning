@@ -1,26 +1,31 @@
 const firstname = document.getElementById("fname")
 const lastname = document.getElementById("lname")
-const email = document.getElementById("mail")
+const email = document.getElementById("email")
 const password = document.getElementById("pword")
 const signUpForm = document.getElementById("formForSignUp");
+const btn = document.getElementById('btn')
 
- function signUpStudent(){
-  // event.preventDefault();
+function signUpStudent(e) {
+  e.preventDefault()
+  console.log(firstname.value, lastname.value, email.value, password.value  )
+  console.log('hii ')
   const user = {
     firstname: firstname.value,
     lastname: lastname.value,
     email: email.value,
-    password:password.value
+    password: password.value
   };
- fetch(`http://localhost:3000/user`,  {
-    method:"POST",
-    headers:{"content-Type":"application/json"},
-    body:JSON.stringify(user)
+  fetch(`https://learnhub-y2uf.onrender.com/users/register`, {
+    method: "POST",
+    headers: { "content-Type": "application/json" },
+    body: JSON.stringify(user)
   }
-  ).then().catch()
+  ).then(res => res.json())
+    .then(data => {
+      console.log(data)
+      window.location.href = "login.html"
+    }
+    )
+    .catch(err => console.log(err))
 }
-signUpForm.addEventListener("submit",(e)=>{
-  e.preventDefault();
-  signUpStudent()
-  window.location.href = "login.html"
-});
+btn.addEventListener("click", signUpStudent);

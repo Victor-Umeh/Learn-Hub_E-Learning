@@ -17,14 +17,17 @@ const signUpforMentor = document.getElementById("mentorForm");
     headers:{"content-Type":"application/json"},
     body:JSON.stringify(user)
   }
-  ).then().catch()
+  ).then(res => res.json())
+  .then(data => {console.log(data)
+  window.location.href = "login.html"}
+)
+  .catch(err => console.log(err))
 }
 signUpforMentor.addEventListener("submit",(e)=>{
 e.preventDefault();
 signUpMentor()
 console.log("signed up")
 
-window.location.href = "login.html"
 
 })
  
