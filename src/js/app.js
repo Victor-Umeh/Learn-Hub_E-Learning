@@ -55,3 +55,93 @@ navLinks?.forEach((n) => {
     overlay.classList.remove("active");
   });
 });
+
+
+  // Get the timer display element
+  const timerDisplay = document.getElementById('timer-display');
+
+  // Retrieve the timer values from localStorage or initialize them to 0
+  let hours = parseInt(localStorage.getItem('hours')) || 0;
+  let minutes = parseInt(localStorage.getItem('minutes')) || 0;
+  let seconds = parseInt(localStorage.getItem('seconds')) || 0;
+
+  // Function to update the timer display
+  function updateTimer() {
+    seconds++;
+    if (seconds >= 60) {
+      seconds = 0;
+      minutes++;
+      if (minutes >= 60) {
+        minutes = 0;
+        hours++;
+      }
+    }
+
+    // Format the time values with leading zeros
+    const formattedTime = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+    // Update the timer display
+    timerDisplay.textContent = formattedTime;
+
+    // Store the timer values in localStorage
+    localStorage.setItem('hours', hours);
+    localStorage.setItem('minutes', minutes);
+    localStorage.setItem('seconds', seconds);
+  }
+
+  // Start the timer
+  setInterval(updateTimer, 1000);
+
+  // // Get the timer display element
+  // const timerDisplay = document.getElementById('timer-display');
+
+  // // Variables to hold the timer values
+  // let hours = 0;
+  // let minutes = 0;
+  // let seconds = 0;
+
+  // // Function to update the timer display
+  // function updateTimer() {
+  //   seconds++;
+  //   if (seconds >= 60) {
+  //     seconds = 0;
+  //     minutes++;
+  //     if (minutes >= 60) {
+  //       minutes = 0;
+  //       hours++;
+  //     }
+  //   }
+
+  //   // Format the time values with leading zeros
+  //   const formattedTime = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+  //   // Update the timer display
+  //   timerDisplay.textContent = formattedTime;
+  // }
+
+  // // Start the timer
+  // setInterval(updateTimer, 1000);
+
+
+
+// function startTimer() {
+//   var timerElement = document.querySelector('.timer');
+//   var time = 0;
+
+//   var timerInterval = setInterval(function() {
+//     var hours = Math.floor(time / 3600);
+//     var minutes = Math.floor((time % 3600) / 60);
+//     var seconds = time % 60;
+
+//     var formattedTime =
+//       ('0' + hours).slice(-2) + ':' +
+//       ('0' + minutes).slice(-2) + ':' +
+//       ('0' + seconds).slice(-2);
+
+//     timerElement.textContent = formattedTime;
+//     time++;
+//   }, 1000);
+// }
+
+// // Start the timer automatically when the page loads
+// window.addEventListener('load', startTimer);
