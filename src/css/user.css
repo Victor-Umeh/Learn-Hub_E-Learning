@@ -279,13 +279,13 @@ body {
   background-repeat: no-repeat;
 }
 .courses--ctx-img-1 {
-  background: url(../../assets/images/jesse.png);
+  background: url("https://res.cloudinary.com/dolfampoa/image/upload/v1684440323/jesse_t2zibe.png");
 }
 .courses--ctx-img-2 {
-  background: url(../../assets/images/Ramnaan.png);
+  background: url("https://res.cloudinary.com/dolfampoa/image/upload/v1684440324/Ramnaan_oujdxq.png");
 }
 .courses--ctx-img-3 {
-  background: url(../../assets/images/Stephen.png);
+  background: url("https://res.cloudinary.com/dolfampoa/image/upload/v1684440323/Stephen_ggklns.png");
 }
 .recent__courses--ctx-img {
   aspect-ratio: 1;
