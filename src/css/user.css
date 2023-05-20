@@ -279,17 +279,18 @@ body {
   background-repeat: no-repeat;
 }
 .courses--ctx-img-1 {
-  background: url(../../assets/images/jesse.png);
+  background: url("https://res.cloudinary.com/dolfampoa/image/upload/v1684440323/jesse_t2zibe.png");
 }
 .courses--ctx-img-2 {
-  background: url(../../assets/images/Ramnaan.png);
+  background: url("https://res.cloudinary.com/dolfampoa/image/upload/v1684440324/Ramnaan_oujdxq.png");
 }
 .courses--ctx-img-3 {
-  background: url(../../assets/images/Stephen.png);
+  background: url("https://res.cloudinary.com/dolfampoa/image/upload/v1684440323/Stephen_ggklns.png");
 }
 .recent__courses--ctx-img {
   aspect-ratio: 1;
   font-size: 0.7rem;
+  border-radius: 10px 10px 0px 0px;
   color: var(--white);
   margin-top: 1.5em;
   position: relative;
@@ -389,8 +390,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   border-radius: 2em;
   padding: 0.8rem;
 }
@@ -460,27 +461,28 @@ body {
   border-radius: 0 2em 2em 0;
 }
 .loader-1 {
-  width: 55%;
+  width: 0%;
   background: var(--loader-blue);
 }
 .loader-2 {
-  width: 75%;
+  width: 0%;
   background: var(--loader-red);
 }
 .loader-3 {
-  width: 70%;
+  width: 0%;
   background: var(--loader-purple);
 }
 .loader-4 {
-  width: 90%;
+  width: 0%;
   background: var(--loader-green);
 }
 
 /* Timer styles */
 .watch{
   position: relative;
+  text-align: right;
   top: 15px;
-  right: 60px;
+  /* right: 60px; */
   color: hsla(0, 1%, 41%, 1);
   font-weight: 600;
   font-family: 'Poppins', sans-serif;

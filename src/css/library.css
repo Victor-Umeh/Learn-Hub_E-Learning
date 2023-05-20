@@ -270,8 +270,9 @@ img.lib-img {
 /* Timer styles */
 .watch{
   position: relative;
+  text-align: right;
   top: 15px;
-  right: 60px;
+  /* right: 60px; */
   color: hsla(0, 1%, 41%, 1);
   font-weight: 600;
   font-family: 'Poppins', sans-serif;

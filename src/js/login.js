@@ -3,15 +3,17 @@ const email = document.getElementById('email')
 const password = document.getElementById("password")
 const form = document.getElementById("form")
 const mentorLogin = document.getElementById("mentor")
-const studentLogin = document.getElementById("student").checked;
+const studentLogin = document.getElementById("student")
+const username = document.getElementById('userName')
 //for signup
 
 async function onStudentLogin(event){
   event.preventDefault();
-const response = await fetch(`http://localhost:3000/user?email=${email.value}&password=${password.value}`,
+const response = await fetch(`https://learnhub-y2uf.onrender.com/users/login?email=${email.value}&password=${password.value}`,
 {method:"GET"}
 );
 const user = await response.json();
+.console.log('user');
 if (user.length>0){
   localStorage.setItem((user),JSON.stringify(user))
   console.log("simp")
@@ -28,13 +30,14 @@ form.addEventListener("submit",onStudentLogin,true)
 
 async function onMentorLogin(event){
   event.preventDefault();
-const response = await fetch(`http://localhost:3000/mentor?email=${email.value}&password=${password.value}`,
+const response = await fetch(`https://learnhub-y2uf.onrender.com/users/login?email=${email.value}&password=${password.value}`,
 {method:"GET"}
 );
 const user = await response.json();
 if (user.length>0){
   localStorage.setItem((user),JSON.stringify(user))
-  console.log("simp")
+  console.log(user)
+  username.innerHTML = user.firstname
   window.location.href = "dashboard.html"
 }else if(user.length<=0){ 
   console.log("incorrect details")

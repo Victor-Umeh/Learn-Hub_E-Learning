@@ -32,7 +32,7 @@
             </svg>
             <!-- Mobile user profile -->
             <div class="profile">
-                <img src="assets/images/whiteshirt-guy.jpg" alt="profile picture">
+                <img src="assets/icons/display-pic.jpg" alt="profile picture">
                 <!-- profile info -->
                 <div class="profile__name--wrapper">
                 </div>
@@ -137,7 +137,7 @@
             <div class="watch">
                 <p>Daily Timer</p>
                 <div class="timer">
-                    <p>00:00:00</p>
+                    <p id="timer-display">00:00:00</p>
                 </div>
             </div>
             <form action="" method="get" class="search__input  wrapper">
@@ -147,17 +147,17 @@
             <header class="header__user sect__head">
                 <h1><span>Courses<span></h1>
             </header>
-            <h2 class="recent__courses--header head__animation">Recent Course</h2>
+            <h2 class="recent__courses--header head__animation">Coming soon...</h2>
             <section class="recent__courses-sect courses__animation">
                 <!-- 1 -->
                 <article class="recent__courses--ctx">
                     <div class="recent__courses--ctx-img courses--ctx-img-1">
                         <div class="ctx__img--container">
                             <div class="ctx-img__title">
-                                <p>Lana Steiner</p>
+                                <p>Jesse Kanadi</p>
                                 <span class="ctx-img__date">18 Jan 2022</span>
                             </div>
-                            <p class="ctx-img__title stack">Dev Ops</p>
+                            <p class="ctx-img__title stack">Graphics designer</p>
                         </div>
                     </div>
                     <div class="recent__courses--ctx-txt">
@@ -180,7 +180,7 @@
                     <div class="recent__courses--ctx-img courses--ctx-img-2">
                         <div class="ctx__img--container">
                             <div class="ctx-img__title">
-                                <p>Lahm Holfmann</p>
+                                <p>Ramnaan Ben</p>
                                 <span class="ctx-img__date">18 Jan 2022</span>
                             </div>
                             <p class="ctx-img__title stack">Frontend</p>
@@ -208,176 +208,10 @@
                     <div class="recent__courses--ctx-img courses--ctx-img-3">
                         <div class="ctx__img--container">
                             <div class="ctx-img__title">
-                                <p>Natali Craig</p>
+                                <p>M Sadiq</p>
                                 <span class="ctx-img__date">14 Jan 2022</span>
                             </div>
-                            <p class="ctx-img__title stack">Designer</p>
-                        </div>
-                    </div>
-
-                    <div class="recent__courses--ctx-txt">
-                        <h3>Collaboration = better designer</h3>
-                        <p>Collaboration can make our teams stronger, and our individual designs better.</p>
-                        <a href="">
-                            Read post
-                            <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M0.345215 3.55817L3.56525 0.338135M3.56525 0.338135H0.345215M3.56525 0.338135V3.55817"
-                                    stroke="#28D6D8" stroke-width="0.644007" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </a>
-                    </div>
-                </article>
-            </section>
-            <h2 class="recent__courses--header head__animation">Recent Course</h2>
-            <section class="recent__courses-sect courses__animation">
-                <!-- 1 -->
-                <article class="recent__courses--ctx">
-                    <div class="recent__courses--ctx-img courses--ctx-img-1">
-                        <div class="ctx__img--container">
-                            <div class="ctx-img__title">
-                                <p>Lana Steiner</p>
-                                <span class="ctx-img__date">18 Jan 2022</span>
-                            </div>
-                            <p class="ctx-img__title stack">Dev Ops</p>
-                        </div>
-                    </div>
-                    <div class="recent__courses--ctx-txt">
-                        <h3>Building your API Stack</h3>
-                        <p>The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing
-                            them.</p>
-                        <a href="">
-                            Read post
-                            <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M0.345215 3.55817L3.56525 0.338135M3.56525 0.338135H0.345215M3.56525 0.338135V3.55817"
-                                    stroke="#28D6D8" stroke-width="0.644007" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </a>
-                    </div>
-                </article>
-                <!-- 2 -->
-                <article class="recent__courses--ctx">
-                    <div class="recent__courses--ctx-img courses--ctx-img-2">
-                        <div class="ctx__img--container">
-                            <div class="ctx-img__title">
-                                <p>Lahm Holfmann</p>
-                                <span class="ctx-img__date">18 Jan 2022</span>
-                            </div>
-                            <p class="ctx-img__title stack">Frontend</p>
-                        </div>
-                    </div>
-
-                    <div class="recent__courses--ctx-txt">
-                        <h3>Become Android Developer</h3>
-                        <p>The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing
-                            them.</p>
-                        <a href="">
-                            Read post
-                            <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M0.345215 3.55817L3.56525 0.338135M3.56525 0.338135H0.345215M3.56525 0.338135V3.55817"
-                                    stroke="#28D6D8" stroke-width="0.644007" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </a>
-                    </div>
-                </article>
-                <!-- 3 -->
-                <article class="recent__courses--ctx">
-
-                    <div class="recent__courses--ctx-img courses--ctx-img-3">
-                        <div class="ctx__img--container">
-                            <div class="ctx-img__title">
-                                <p>Natali Craig</p>
-                                <span class="ctx-img__date">14 Jan 2022</span>
-                            </div>
-                            <p class="ctx-img__title stack">Designer</p>
-                        </div>
-                    </div>
-
-                    <div class="recent__courses--ctx-txt">
-                        <h3>Collaboration = better designer</h3>
-                        <p>Collaboration can make our teams stronger, and our individual designs better.</p>
-                        <a href="">
-                            Read post
-                            <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M0.345215 3.55817L3.56525 0.338135M3.56525 0.338135H0.345215M3.56525 0.338135V3.55817"
-                                    stroke="#28D6D8" stroke-width="0.644007" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </a>
-                    </div>
-                </article>
-            </section>
-            <h2 class="recent__courses--header head__animation">Recent Course</h2>
-            <section class="recent__courses-sect courses__animation">
-                <!-- 1 -->
-                <article class="recent__courses--ctx">
-                    <div class="recent__courses--ctx-img courses--ctx-img-1">
-                        <div class="ctx__img--container">
-                            <div class="ctx-img__title">
-                                <p>Lana Steiner</p>
-                                <span class="ctx-img__date">18 Jan 2022</span>
-                            </div>
-                            <p class="ctx-img__title stack">Dev Ops</p>
-                        </div>
-                    </div>
-                    <div class="recent__courses--ctx-txt">
-                        <h3>Building your API Stack</h3>
-                        <p>The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing
-                            them.</p>
-                        <a href="">
-                            Read post
-                            <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M0.345215 3.55817L3.56525 0.338135M3.56525 0.338135H0.345215M3.56525 0.338135V3.55817"
-                                    stroke="#28D6D8" stroke-width="0.644007" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </a>
-                    </div>
-                </article>
-                <!-- 2 -->
-                <article class="recent__courses--ctx">
-                    <div class="recent__courses--ctx-img courses--ctx-img-2">
-                        <div class="ctx__img--container">
-                            <div class="ctx-img__title">
-                                <p>Lahm Holfmann</p>
-                                <span class="ctx-img__date">18 Jan 2022</span>
-                            </div>
-                            <p class="ctx-img__title stack">Frontend</p>
-                        </div>
-                    </div>
-
-                    <div class="recent__courses--ctx-txt">
-                        <h3>Become Android Developer</h3>
-                        <p>The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing
-                            them.</p>
-                        <a href="">
-                            Read post
-                            <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M0.345215 3.55817L3.56525 0.338135M3.56525 0.338135H0.345215M3.56525 0.338135V3.55817"
-                                    stroke="#28D6D8" stroke-width="0.644007" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </a>
-                    </div>
-                </article>
-                <!-- 3 -->
-                <article class="recent__courses--ctx">
-
-                    <div class="recent__courses--ctx-img courses--ctx-img-3">
-                        <div class="ctx__img--container">
-                            <div class="ctx-img__title">
-                                <p>Natali Craig</p>
-                                <span class="ctx-img__date">14 Jan 2022</span>
-                            </div>
-                            <p class="ctx-img__title stack">Designer</p>
+                            <p class="ctx-img__title stack">Backend Dev</p>
                         </div>
                     </div>
 
@@ -414,7 +248,7 @@
                     <div class="homework__details-container">
                         <div class="homework__details details-1">
                             <p>Web Design</p>
-                            <p>55%</p>
+                            <p>0%</p>
                         </div>
                         <div class="loader__container container-1">
                             <div class="loader loader-1"></div>
@@ -436,7 +270,7 @@
                     <div class="homework__details-container">
                         <div class="homework__details details-2">
                             <p>Ads Facebook</p>
-                            <p>75%</p>
+                            <p>0%</p>
                         </div>
                         <div class="loader__container container-2">
                             <div class="loader loader-2"></div>
@@ -459,7 +293,7 @@
                     <div class="homework__details-container">
                         <div class="homework__details details-3">
                             <p>Graphic Designer</p>
-                            <p>70%</p>
+                            <p>0%</p>
                         </div>
                         <div class="loader__container container-3">
                             <div class="loader loader-3"></div>
@@ -478,7 +312,7 @@
                     <div class="homework__details-container">
                         <div class="homework__details details-4">
                             <p>Content Creator</p>
-                            <p>90%</p>
+                            <p>0%</p>
                         </div>
                         <div class="loader__container container-4">
                             <div class="loader loader-4"></div>
