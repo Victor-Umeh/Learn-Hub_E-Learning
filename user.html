@@ -18,6 +18,7 @@
     <!-- SCROLL REVEAL LIBRARY -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script defer src="src/js/app.js"></script>
+    <script src="/src/js/user.js"></script>
 
 </head>
 
@@ -146,7 +147,7 @@
                 <button class="search__input--btn"><img src="assets/icons/search-icon.svg" alt=""></button>
             </form>
             <header class="header__user head__animation">
-                <h1><span>Welcome back,</span> <span id="userName"></span></h1>
+                <h1>Welcome back, <span id="userName"></h1>
                 <p>Step into your personalized learning space.</p>
             </header>
             <article class="subscription head__animation">
@@ -329,9 +330,8 @@
                 </div>
             </aside>
         </section>
-
+        <button onclick="logOut()">log out</button>
     </main>
-    <script src="./src/js/login.js"></script>
 </body>
 
 </html>

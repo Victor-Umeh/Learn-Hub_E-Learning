@@ -20,6 +20,7 @@
 
     <script src="https://kit.fontawesome.com/48606a42ac.js" crossorigin="anonymous"></script>
     <script defer src="src/js/script.js"></script>
+    <script src="./src/js/newestlogin.js" defer></script>
 </head>
 <body>
     <div id="modal">
@@ -82,12 +83,13 @@
             <label for="password">Enter your Password</label><br>
             <input id="password" type="password">
             <div class="submit">
-                <button type="submit"  >Login</button>
+                <p id="errorMessage"></p>
+                <button type="submit" id="buton">Login</button>
                 <a class="create" onclick="options()" >Sign up</a>
             </div>
             <div class="tick">
-                <input type="radio" name="post" id=""> <a href="dashboard.html">Mentor</a> 
-                <input type="radio" name="post" id=""> <a href="user.html">Student</a> 
+                <input type="radio" name="post" id="mentor"> Mentor 
+                <input type="radio" name="post" id="student">Student 
             </div>
         </form>
     </main>
