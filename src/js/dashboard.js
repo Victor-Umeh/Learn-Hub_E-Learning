@@ -15,10 +15,10 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
-function logout(){
+function logOut(){
   localStorage.removeItem('data');
   window.location.href = 'index.html'
-
+console.log('heyyy')
 }
 
 

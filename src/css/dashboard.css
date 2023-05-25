@@ -77,6 +77,25 @@ body {
   z-index: 100;
   background-color: var(--white);
 }
+ button {
+  display: flex;
+  height: 30px;
+  width:8rem ;
+outline: none;
+border-radius: 4px;
+border-style: none;
+/* background-color:#e4e4e4; */
+}
+button p{
+  margin: auto;
+  
+}
+button i{
+ margin: auto;
+}
+ button:hover{
+  cursor: pointer;
+ }
 .nav__wrapper {
   display: flex;
   justify-content: space-between;
@@ -102,6 +121,7 @@ body {
   aspect-ratio: 1;
 }
 .main__wrapper {
+  /* position: absolute; */
   min-height: 100vh;
   padding-bottom: 3rem;
 }
@@ -179,6 +199,11 @@ body {
 .file {
   /* opacity: 0; */
   display: none;
+}
+#settingsModal{
+  display: none;
+  z-index: 4;
+  background-color: aquamarine;
 }
 @media (min-width: 900px) {
   .nav {

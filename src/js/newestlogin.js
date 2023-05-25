@@ -14,6 +14,11 @@ form.addEventListener("submit", (e) => {
   } else if (studentRadio.checked && userEmail.value && userPassword.value) {
     studentLogin();
   }
+  else if(!studentRadio.checked && !mentorRadio.checked){
+    errorMessage.style.color = 'red';
+    errorMessage.style.marginTop = '-30px';
+    errorMessage.textContent = "Cant log without user-type";
+  }
 });
 
 function mentorLogin() {
