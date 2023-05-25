@@ -13,6 +13,10 @@ form.addEventListener("submit", (e) => {
     mentorLogin();
   } else if (studentRadio.checked && userEmail.value && userPassword.value) {
     studentLogin();
+  } else if(!studentRadio.checked && !mentorRadio.checked){
+    errorMessage.style.color = 'red';
+    errorMessage.style.marginTop = '-30px';
+    errorMessage.textContent = "Can not login without a user type";
   }
 });
 

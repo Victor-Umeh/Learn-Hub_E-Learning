@@ -92,56 +92,38 @@ navLinks?.forEach((n) => {
   // Start the timer
   setInterval(updateTimer, 1000);
 
-  // // Get the timer display element
-  // const timerDisplay = document.getElementById('timer-display');
+// Username and email
+const storedUser = localStorage.getItem("data")
+const user = JSON.parse(storedUser)
+console.log(user.firstname)
 
-  // // Variables to hold the timer values
-  // let hours = 0;
-  // let minutes = 0;
-  // let seconds = 0;
+document.addEventListener("DOMContentLoaded", function() {
+  // Get the userName element
+  const userNameElement = document.getElementById("userName");
+  const profileFirstNmae = document.getElementById("profileFirstNmae")
+  const profileLast = document.getElementById("lastName")
+  const profileemail = document.getElementById("profileEmail")
 
-  // // Function to update the timer display
-  // function updateTimer() {
-  //   seconds++;
-  //   if (seconds >= 60) {
-  //     seconds = 0;
-  //     minutes++;
-  //     if (minutes >= 60) {
-  //       minutes = 0;
-  //       hours++;
-  //     }
-  //   }
+  if (userNameElement) {
+    userNameElement.innerHTML = user.firstname; 
+    profileFirstNmae.innerHTML = user.firstname;
+  }
+  if (profileemail){
+    profileemail.innerHTML = user.email
+  }
+  if (profileLast){
+    profileLast.innerHTML = user.lastname
+  }
+});
 
-  //   // Format the time values with leading zeros
-  //   const formattedTime = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+function logOut(){
+  localStorage.clear()
+  localStorage.removeItem('data');
+  window.location.href = 'index.html'
 
-  //   // Update the timer display
-  //   timerDisplay.textContent = formattedTime;
-  // }
+}
+console.log(user.last)
 
-  // // Start the timer
-  // setInterval(updateTimer, 1000);
+const logOUT = document.querySelector(".profile__icon")
 
-
-
-// function startTimer() {
-//   var timerElement = document.querySelector('.timer');
-//   var time = 0;
-
-//   var timerInterval = setInterval(function() {
-//     var hours = Math.floor(time / 3600);
-//     var minutes = Math.floor((time % 3600) / 60);
-//     var seconds = time % 60;
-
-//     var formattedTime =
-//       ('0' + hours).slice(-2) + ':' +
-//       ('0' + minutes).slice(-2) + ':' +
-//       ('0' + seconds).slice(-2);
-
-//     timerElement.textContent = formattedTime;
-//     time++;
-//   }, 1000);
-// }
-
-// // Start the timer automatically when the page loads
-// window.addEventListener('load', startTimer);
+logOUT = addEventListener("click",)

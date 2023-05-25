@@ -17,8 +17,8 @@
     <!-- ANIMATION LIBRARY -->
     <!-- SCROLL REVEAL LIBRARY -->
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script defer src="src/js/app.js"></script>
-    <script src="/src/js/user.js"></script>
+    <script defer src="./src/js/app.js"></script>
+    <script src="./src/js/use.js"></script>
 
 </head>
 
@@ -115,8 +115,8 @@
                 <img src="assets/icons/display-pic.jpg" alt="profile picture">
                 <!-- profile info -->
                 <div class="profile__name--wrapper">
-                    <p class="profile__name">Olivia Rhye</p>
-                    <span class="profile__email">olivia@learnhub.edu</span>
+                    <p class="profile__name"><span id="profileFirstNmae">Olivia</span> <span id="lastName">Rhye</span></p>
+                    <span class="profile__email" id="profileEmail">olivia@learnhub.edu</span>
                 </div>
 
                 <!-- MOBILE -->
@@ -147,7 +147,7 @@
                 <button class="search__input--btn"><img src="assets/icons/search-icon.svg" alt=""></button>
             </form>
             <header class="header__user head__animation">
-                <h1>Welcome back, <span id="userName"></h1>
+                <h1>Welcome <span id="userName"></h1>
                 <p>Step into your personalized learning space.</p>
             </header>
             <article class="subscription head__animation">

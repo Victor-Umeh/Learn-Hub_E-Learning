@@ -185,6 +185,7 @@
   }
   .search__input {
     width: 66vw;
+    display: none;
     min-width: 213px;
     max-width: 280px;
     height: 4.5vh;
@@ -216,7 +217,7 @@
     width: 14px;
   }
   .header__user {
-    margin-block: 2em;
+    /* margin-block: 2em; */
   }
   .header__user h1 {
     font-size: clamp(2rem, 7vw, 6.2rem);
@@ -254,7 +255,7 @@
   .watch{
     position: relative;
     text-align: right;
-    top: 15px;
+    top: 70px;
     /* right: 60px; */
     color: hsla(0, 1%, 41%, 1);
     font-weight: 600;
@@ -444,8 +445,8 @@
   
     /* Timer Styles */
   .watch {
-    position: fixed;
-    top: 20px;
+    position: absolute;
+    top: 60px;
     right: 60px;
   }
   }
