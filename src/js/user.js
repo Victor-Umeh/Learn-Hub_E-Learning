@@ -6,22 +6,33 @@ console.log(user.firstname)
 document.addEventListener("DOMContentLoaded", function() {
   // Get the userName element
   const userNameElement = document.getElementById("userName");
-  const profilenme = document.querySelector("profile__name")
-  const profileemail = document.querySelector("profile__email")
+  const profileFirstNmae = document.getElementById("profileFirstNmae")
+  const profileLast = document.getElementById("lastName")
+  const profileemail = document.getElementById("profileEmail")
 
   if (userNameElement) {
     userNameElement.innerHTML = user.firstname; 
-    // profilenme.innerHTML = user.firstname,user.lastname
-    
+   
+  }
+  if(profileFirstNmae){
+    profileFirstNmae.innerHTML = user.firstname;
   }
   if (profileemail){
     profileemail.innerHTML = user.email
-
+  }
+  if (profileLast){
+    profileLast.innerHTML = user.lastname
   }
 });
 
 function logOut(){
+  localStorage.clear()
   localStorage.removeItem('data');
   window.location.href = 'index.html'
 
 }
+console.log(user.lastname)
+
+const logOUT = document.querySelector(".profile__icon")
+
+logOUT = addEventListener("click",)
