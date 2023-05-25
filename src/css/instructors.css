@@ -211,6 +211,17 @@ body {
   outline: 0;
   background: transparent;
 }
+button{
+  display: flex;
+outline: none;
+/* width: 10rem; */
+/* height: 2rem; */
+padding: 1rem 2.5rem;
+border-radius: 4px;
+border-style: none;
+background-color: var(--purple);
+color: white;
+}
 .search__input--btn {
   position: absolute;
   display: grid;

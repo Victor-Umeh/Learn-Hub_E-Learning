@@ -92,6 +92,12 @@ navLinks?.forEach((n) => {
   // Start the timer
   setInterval(updateTimer, 1000);
 
+function logOut(){
+  localStorage.getItem('data')
+  window.location.href = "index.html"
+}
+  
+
 
   
 
