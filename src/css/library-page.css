@@ -61,6 +61,10 @@
     padding-left: 2.5rem;
     line-height: 25px;
   }
+  ul {
+    padding-left: 3.5rem;
+    list-style: disc;
+  }
   img {
     display: block;
   }

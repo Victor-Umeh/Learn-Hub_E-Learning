@@ -273,7 +273,7 @@ img.lib-img {
 .watch{
   position: relative;
   text-align: right;
-  top: 50px;
+  top: 5px;
   /* right: 60px; */
   color: hsla(0, 1%, 41%, 1);
   font-weight: 600;
