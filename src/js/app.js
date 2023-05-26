@@ -117,13 +117,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function logOut(){
-  localStorage.clear()
   localStorage.removeItem('data');
   window.location.href = 'index.html'
-
+  console.log('heyyy')
 }
-console.log(user.last)
-
-const logOUT = document.querySelector(".profile__icon")
-
-logOUT = addEventListener("click",)

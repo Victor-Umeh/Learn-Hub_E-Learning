@@ -93,14 +93,21 @@
             </svg>
             <a href="library.html">Library</a>
           </button>
-          <button class="Desktop__nav--icons settings">
-            <svg class="nav__icons" width="22" height="23" viewBox="0 0 27 27" fill="none"
+          <button class="Desktop__nav--icons">
+              <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.6895 4.5L19.9395 2.25L21 3.30825L18.75 5.559L17.6895 4.5ZM10.5 13.875L6.75 10.1542L7.9425 8.97675L10.5 11.5118L16.0575 6L17.25 7.18425L10.5 13.875Z" fill="#444343"/>
+                  <path d="M1.5 19.5V17.5597L6.3105 12.75L5.25 11.6887L1.5 15.4387V0H0V19.5C0 19.8978 0.158035 20.2794 0.43934 20.5607C0.720644 20.842 1.10218 21 1.5 21H21V19.5H1.5Z" fill="#444343"/>
+              </svg>                            
+              <a href="quiz.html">Test</a>
+          </button>
+          <button onclick="logOut()" class="Desktop__nav--icons settings">
+              <svg  class="profile__icon" id="logOut" width="29" height="25" viewBox="0 0 29 25" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
-                d="M23.7911 14.8218C23.8474 14.4 23.8755 13.964 23.8755 13.5C23.8755 13.05 23.8474 12.6 23.7771 12.1781L26.6318 9.95623C26.7548 9.85484 26.8388 9.71393 26.8696 9.55751C26.9004 9.4011 26.876 9.23885 26.8005 9.09842L24.1005 4.42968C24.021 4.28844 23.8941 4.1799 23.7423 4.12327C23.5904 4.06665 23.4234 4.0656 23.2708 4.12031L19.9099 5.4703C19.2068 4.93593 18.4615 4.48593 17.6318 4.14843L17.1255 0.576565C17.1006 0.415592 17.0188 0.268888 16.895 0.163095C16.7711 0.0573018 16.6134 -0.000564615 16.4505 4.15321e-06H11.0506C10.7131 4.15321e-06 10.4459 0.239066 10.3896 0.576565L9.88337 4.14843C9.05368 4.48593 8.29431 4.94999 7.60525 5.4703L4.24432 4.12031C3.93494 4.00781 3.58338 4.12031 3.41463 4.42968L0.7287 9.09842C0.55995 9.39373 0.6162 9.75936 0.897449 9.95623L3.75213 12.1781C3.68182 12.6 3.62557 13.064 3.62557 13.5C3.62557 13.9359 3.65369 14.4 3.72401 14.8218L0.869324 17.0437C0.746312 17.1451 0.66226 17.286 0.63149 17.4424C0.600719 17.5988 0.625134 17.7611 0.700575 17.9015L3.40057 22.5703C3.56932 22.8796 3.92088 22.9781 4.23025 22.8796L7.59118 21.5296C8.29431 22.064 9.03962 22.514 9.8693 22.8515L10.3756 26.4234C10.4459 26.7609 10.7131 26.9999 11.0506 26.9999H16.4505C16.788 26.9999 17.0693 26.7609 17.1115 26.4234L17.6177 22.8515C18.4474 22.514 19.2068 22.064 19.8958 21.5296L23.2568 22.8796C23.5661 22.9921 23.9177 22.8796 24.0865 22.5703L26.7865 17.9015C26.9552 17.5922 26.8849 17.2406 26.6177 17.0437L23.7911 14.8218ZM13.7505 18.5625C10.9662 18.5625 8.68806 16.2843 8.68806 13.5C8.68806 10.7156 10.9662 8.43748 13.7505 8.43748C16.5349 8.43748 18.813 10.7156 18.813 13.5C18.813 16.2843 16.5349 18.5625 13.7505 18.5625Z"
-                stroke="#444343" stroke-width="2.5" />
-            </svg>
-            <a>Settings</a>
+                  d="M17.7812 7.03125V4.29688C17.7812 3.57167 17.4932 2.87617 16.9804 2.36338C16.4676 1.85059 15.7721 1.5625 15.0469 1.5625H4.10938C3.38417 1.5625 2.68867 1.85059 2.17588 2.36338C1.66309 2.87617 1.375 3.57167 1.375 4.29688V20.7031C1.375 21.4283 1.66309 22.1238 2.17588 22.6366C2.68867 23.1494 3.38417 23.4375 4.10938 23.4375H14.5C16.0101 23.4375 17.7812 22.2132 17.7812 20.7031V17.9688M22.1562 7.03125L27.625 12.5L22.1562 17.9688M9.03125 12.5H26.5312"
+                  stroke="#444343" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+              <a>Log Out</a> 
           </button>
           <div class="dashboard__active"></div>
         </div>
@@ -109,7 +116,7 @@
         <img src="assets/icons/display-pic.jpg" alt="profile picture">
         <!-- profile info -->
         <div class="profile__name--wrapper">
-          <p class="profile__name"><span id="profileFirstNmae">Olivia</span> <span id="lastName">Rhye</span></p>
+          <p class="profile__name"><span id="profileFirstNmae"></span> <span id="lastName">Rhye</span></p>
           <span class="profile__email" id="profileEmail">olivia@learnhub.edu</span>
         </div>
 
@@ -145,25 +152,51 @@
         </header>
 
         <div class="book__screen">
+          <p>
+              <span>Chapter X: Understanding User Experience Design (UX)</span><br>
+              Introduction User Experience Design (UX) is an essential component of any digital product or service. It ensures that the product or service is user-friendly, intuitive, and enjoyable to use. UX designers are responsible for designing the entire experience that users have when they interact with a product or service. This chapter will provide a comprehensive overview of UX design, its principles, and its importance in creating successful digital products and services.
+              What is User Experience Design? User Experience Design is the process of designing a product or service that is user-friendly and enjoyable to use. It encompasses every aspect of the user's interaction with the product or service, from the initial discovery phase to the post-purchase or post-use phase. The goal of UX design is to create a seamless, intuitive, and pleasant experience for the user.
+              UX designers take a human-centered approach to design, which means they place the needs and expectations of the user at the center of the design process. They conduct user research to understand the users' needs, behaviors, and pain points, and use that information to create a product or service that addresses those needs and pain points.
+              UX design also involves a deep understanding of the technical aspects of the product or service, including its functionality, accessibility, and usability. UX designers work closely with developers to ensure that the product or service is easy to use and technically sound.
+              The Principles of UX Design There are several principles that guide UX design. These principles are based on the understanding of human behavior and how people interact with technology. The following are some of the most important principles of UX design:
+          </p><br>
+          <ol>
+              <li>
+                User-Centered Design: The user should always be at the center of the design process. UX designers should conduct user research to understand the users' needs, behaviors, and pain points. They should use that information to create a product or service that addresses those needs and pain points.
+              </li>
+              <li>
+                Usability: The product or service should be easy to use and intuitive. It should be designed in a way that minimizes the user's cognitive load and maximizes their ability to complete tasks efficiently.
+              </li>
+              <li>
+                Accessibility: The product or service should be accessible to all users, regardless of their abilities. UX designers should consider the needs of users with disabilities and design the product or service accordingly.
+              </li>
+              <li>
+                Consistency: The product or service should be consistent in its design and functionality. The user should be able to predict what will happen when they interact with the product or service.
+              </li>
+              <li>
+                Visual Hierarchy: The product or service should be designed in a way that guides the user's attention to the most important elements. This can be achieved through the use of color, size, and placement.
+              </li>
+              <li>
+                Feedback: The user should receive feedback when they interact with the product or service. This feedback should be timely and informative, and it should help the user understand what they are doing and what the outcome of their actions will be.
+              </li>
+            </ol><br>
             <p>
-                <span>Chapter X: Understanding User Experience Design (UX)</span><br>
-                Introduction User Experience Design (UX) is an essential component of any digital product or service. It ensures that the product or service is user-friendly, intuitive, and enjoyable to use. UX designers are responsible for designing the entire experience that users have when they interact with a product or service. This chapter will provide a comprehensive overview of UX design, its principles, and its importance in creating successful digital products and services.
-                What is User Experience Design? User Experience Design is the process of designing a product or service that is user-friendly and enjoyable to use. It encompasses every aspect of the user's interaction with the product or service, from the initial discovery phase to the post-purchase or post-use phase. The goal of UX design is to create a seamless, intuitive, and pleasant experience for the user.
-                UX designers take a human-centered approach to design, which means they place the needs and expectations of the user at the center of the design process. They conduct user research to understand the users' needs, behaviors, and pain points, and use that information to create a product or service that addresses those needs and pain points.
-                UX design also involves a deep understanding of the technical aspects of the product or service, including its functionality, accessibility, and usability. UX designers work closely with developers to ensure that the product or service is easy to use and technically sound.
-                The Principles of UX Design There are several principles that guide UX design. These principles are based on the understanding of human behavior and how people interact with technology. The following are some of the most important principles of UX design:
-                User-Centered Design The user should always be at the center of the design process. UX designers should conduct user research to understand the users' needs, behaviors, and pain points. They should use that information to create a product or service that addresses those needs and pain points.
-                Usability The product or service should be easy to use and intuitive. It should be designed in a way that minimizes the user's cognitive load and maximizes their ability to complete tasks efficiently.
-                Accessibility The product or service should be accessible to all users, regardless of their abilities. UX designers should consider the needs of users with disabilities and design the product or service accordingly.
-                Consistency The product or service should be consistent in its design and functionality. The user should be able to predict what will happen when they interact with the product or service.
-                Visual Hierarchy The product or service should be designed in a way that guides the user's attention to the most important elements. This can be achieved through the use of color, size, and placement.
-                Feedback The user should receive feedback when they interact with the product or service. This feedback should be timely and informative, and it should help the user understand what they are doing and what the outcome of their actions will be.
-                The Importance of UX Design UX design is essential in creating successful digital products and services. It has several benefits, including:
-                Increased User Satisfaction UX design ensures that the user has a seamless, intuitive, and enjoyable experience when interacting with the product or service. This results in increased user satisfaction and loyalty.
-                Increased Engagement When the user has a positive experience with the product or service, they are more likely to engage with it. This can lead to increased usage and adoption of the product or service.
-                Increased Revenue When the user is satisfied with the product or service, they are more likely to make a purchase or continue using the product or service. This can lead to increased revenue for the company.
-                Competitive Advantage A well-designed product or service that provides a great user experience can give a company a competitive advantage in the market.
-            </p>
+              The Importance of UX Design UX design is essential in creating successful digital products and services. It has several benefits, including:
+            </p><br>
+            <ol>
+              <li>
+                Increased User Satisfaction: UX design ensures that the user has a seamless, intuitive, and enjoyable experience when interacting with the product or service. This results in increased user satisfaction and loyalty.
+              </li>
+              <li>
+                Increased Engagement: When the user has a positive experience with the product or service, they are more likely to engage with it. This can lead to increased usage and adoption of the product or service.
+              </li>
+              <li>
+                Increased Revenue: When the user is satisfied with the product or service, they are more likely to make a purchase or continue using the product or service. This can lead to increased revenue for the company.
+              </li>
+              <li>
+                Competitive Advantage: A well-designed product or service that provides a great user experience can give a company a competitive advantage in the market.
+              </li>
+            </ol>
         </div>
     </section>
   </main>

@@ -5,17 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn-Hub</title>
+    <title>Learn Hub Quiz</title>
     <!-- Font-link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/css/courses.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/css/quiz.css">
+    <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/48606a42ac.js" crossorigin="anonymous"></script>
-
-    <!-- ANIMATION LIBRARY -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script defer src="./src/js/app.js"></script>
+    <script defer src="src/js/quiz.js"></script>
 </head>
 
 <body>
@@ -32,7 +31,7 @@
             </svg>
             <!-- Mobile user profile -->
             <div class="profile">
-                <img src="assets/icons/display-pic.jpg" alt="profile picture">
+                <img src="assets/images/whiteshirt-guy.jpg" alt="profile picture">
                 <!-- profile info -->
                 <div class="profile__name--wrapper">
                 </div>
@@ -118,8 +117,8 @@
                 <img src="assets/icons/display-pic.jpg" alt="profile picture">
                 <!-- profile info -->
                 <div class="profile__name--wrapper">
-                    <p class="profile__name"> <span id="profileFirstNmae"></span> <span id="lastName">Rhye</span> </p>
-                    <span class="profile__email" id="profileEmail">olivia@learnhub.edu</span>
+                    <p class="profile__name">Olivia Rhye</p>
+                    <span class="profile__email">olivia@learnhub.edu</span>
                 </div>
 
                 <!-- MOBILE -->
@@ -135,200 +134,69 @@
         </div>
         <div class="overlay"></div>
     </nav>
-
     <main class="main__app">
-
-        <!-- Main body sect -->
-
         <section class="wrapper user__main">
-            <div class="watch">
-                <p>Daily Timer</p>
-                <div class="timer">
-                    <p id="timer-display">00:00:00</p>
-                </div>
+            <!-- WATCH -->
+      <div class="watch">
+        <p>Daily Timer</p>
+        <div class="timer">
+            <p id="timer-display">00:00:00</p>
+        </div>
+      </div>
+
+            <div class="quiz__content">
+                <section class="test" id="test">
+                    <h2>Take a Quick Test</h2>
+                    <button id="test__btn">QUIZ</button>
+                </section>
+                <!-- QUIZ  -->
+                <section class="quiz hidden" id="quiz">
+                    <article class="quiz__question">
+                        <div class="quiz__question--details">
+                            <h2 class="quiz__question-details">Questions
+                                <span id="total__test">10</span>
+                            </h2>
+                            <span class="quiz__question-num" id="current__question">1</span>
+                        </div>
+                        <p id="quiz__question">
+                            Which programming laguage is the most popular.
+                        </p>
+                    </article>
+                    <article class="quiz__answers">
+                        <!-- <button class="quiz-answer-opt">PHP</button> -->
+                        <!-- <button class="quiz-answer-opt">Java</button> -->
+                        <!-- <button class="quiz-answer-opt">Python</button> -->
+                        <!-- <button class="quiz-answer-opt">Javascript</button> -->
+                    </article>
+                    <button class="next__btn"></button>
+                </section>
+                <aside class="wrapper home__work-sect" id="stats">
+                    <h2 class="">TEST EVALUATION</h2>
+                    <!-- 1 -->
+                    <div class="homework homework-1">
+                        <div class="homework__icon icon-1">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.19255 8.29107V10.488H4.89714V8.29107M2.81004 8.29107H10.2796C10.8948 8.29107 11.2025 8.29107 11.4374 8.17135C11.6441 8.06603 11.8122 7.89799 11.9175 7.6913C12.0372 7.45632 12.0372 7.14872 12.0372 6.53352V2.35933C12.0372 1.74413 12.0372 1.43653 11.9175 1.20155C11.8122 0.994861 11.6441 0.826816 11.4374 0.721502C11.2025 0.601776 10.8948 0.601776 10.2796 0.601776H2.81004C2.19484 0.601776 1.88724 0.601776 1.65227 0.721502C1.44558 0.826816 1.27753 0.994861 1.17222 1.20155C1.05249 1.43653 1.05249 1.74413 1.05249 2.35933V6.53352C1.05249 7.14872 1.05249 7.45632 1.17222 7.6913C1.27753 7.89799 1.44558 8.06603 1.65227 8.17135C1.88724 8.29107 2.19484 8.29107 2.81004 8.29107Z"
+                                    stroke="#175CD3" stroke-width="1.09847" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="homework__details-container">
+                            <div class="homework__details details-1">
+                                <p>Result</p>
+                                <p id="result">0%</p>
+                            </div>
+                            <div class="loader__container container-1">
+                                <div class="loader loader-1"></div>
+                            </div>
+                            <p id="msg"></p>
+                        </div>
+                    </div>
+                </aside>
             </div>
-            <form action="" method="get" class="search__input  wrapper">
-                <input type="text" placeholder="Search  ">
-                <button class="search__input--btn"><img src="assets/user page icons/search-icon.svg" alt=""></button>
-            </form>
-            <header class="header__user sect__head">
-                <h1><span>Courses<span></h1>
-            </header>
-            <h2 class="recent__courses--header head__animation">Coming soon...</h2>
-            <section class="recent__courses-sect courses__animation">
-                <!-- 1 -->
-                <article class="recent__courses--ctx">
-                    <div class="recent__courses--ctx-img courses--ctx-img-1">
-                        <div class="ctx__img--container">
-                            <div class="ctx-img__title">
-                                <p>Jesse Kanadi</p>
-                                <span class="ctx-img__date">18 Jan 2022</span>
-                            </div>
-                            <p class="ctx-img__title stack">Graphics designer</p>
-                        </div>
-                    </div>
-                    <div class="recent__courses--ctx-txt">
-                        <h3>Building your API Stack</h3>
-                        <p>The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing
-                            them.</p>
-                        <a href="">
-                            Read post
-                            <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M0.345215 3.55817L3.56525 0.338135M3.56525 0.338135H0.345215M3.56525 0.338135V3.55817"
-                                    stroke="#28D6D8" stroke-width="0.644007" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </a>
-                    </div>
-                </article>
-                <!-- 2 -->
-                <article class="recent__courses--ctx">
-                    <div class="recent__courses--ctx-img courses--ctx-img-2">
-                        <div class="ctx__img--container">
-                            <div class="ctx-img__title">
-                                <p>Ramnaan Ben</p>
-                                <span class="ctx-img__date">18 Jan 2022</span>
-                            </div>
-                            <p class="ctx-img__title stack">Frontend</p>
-                        </div>
-                    </div>
-
-                    <div class="recent__courses--ctx-txt">
-                        <h3>Become Android Developer</h3>
-                        <p>The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing
-                            them.</p>
-                        <a href="">
-                            Read post
-                            <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M0.345215 3.55817L3.56525 0.338135M3.56525 0.338135H0.345215M3.56525 0.338135V3.55817"
-                                    stroke="#28D6D8" stroke-width="0.644007" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </a>
-                    </div>
-                </article>
-                <!-- 3 -->
-                <article class="recent__courses--ctx">
-
-                    <div class="recent__courses--ctx-img courses--ctx-img-3">
-                        <div class="ctx__img--container">
-                            <div class="ctx-img__title">
-                                <p>M Sadiq</p>
-                                <span class="ctx-img__date">14 Jan 2022</span>
-                            </div>
-                            <p class="ctx-img__title stack">Backend Dev</p>
-                        </div>
-                    </div>
-
-                    <div class="recent__courses--ctx-txt">
-                        <h3>Collaboration = better designer</h3>
-                        <p>Collaboration can make our teams stronger, and our individual designs better.</p>
-                        <a href="">
-                            Read post
-                            <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M0.345215 3.55817L3.56525 0.338135M3.56525 0.338135H0.345215M3.56525 0.338135V3.55817"
-                                    stroke="#28D6D8" stroke-width="0.644007" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </a>
-                    </div>
-                </article>
-            </section>
-
-            <!-- Aside body sect -->
-            <aside class="wrapper home__work-sect">
-                <h2>My homework</h2>
-                <!-- 1 -->
-                <div class="homework homework-1">
-                    <div class="homework__icon icon-1">
-                        <svg viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M8.19255 8.29107V10.488H4.89714V8.29107M2.81004 8.29107H10.2796C10.8948 8.29107 11.2025 8.29107 11.4374 8.17135C11.6441 8.06603 11.8122 7.89799 11.9175 7.6913C12.0372 7.45632 12.0372 7.14872 12.0372 6.53352V2.35933C12.0372 1.74413 12.0372 1.43653 11.9175 1.20155C11.8122 0.994861 11.6441 0.826816 11.4374 0.721502C11.2025 0.601776 10.8948 0.601776 10.2796 0.601776H2.81004C2.19484 0.601776 1.88724 0.601776 1.65227 0.721502C1.44558 0.826816 1.27753 0.994861 1.17222 1.20155C1.05249 1.43653 1.05249 1.74413 1.05249 2.35933V6.53352C1.05249 7.14872 1.05249 7.45632 1.17222 7.6913C1.27753 7.89799 1.44558 8.06603 1.65227 8.17135C1.88724 8.29107 2.19484 8.29107 2.81004 8.29107Z"
-                                stroke="#175CD3" stroke-width="1.09847" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </div>
-
-                    <div class="homework__details-container">
-                        <div class="homework__details details-1">
-                            <p>Web Design</p>
-                            <p>0%</p>
-                        </div>
-                        <div class="loader__container container-1">
-                            <div class="loader loader-1"></div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 2 -->
-                <div class="homework homework-2">
-                    <div class="homework__icon icon-2">
-                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M8.742 5.26015V3.61244C8.742 2.3991 7.75839 1.4155 6.54505 1.4155C5.33172 1.4155 4.34811 2.3991 4.34811 3.61244V5.26014M1.92708 6.00269L1.59754 9.5178C1.50384 10.5172 1.457 11.017 1.62283 11.4029C1.76852 11.742 2.02381 12.0224 2.34781 12.1991C2.71662 12.4002 3.21854 12.4002 4.22236 12.4002H8.86774C9.87157 12.4002 10.3735 12.4002 10.7423 12.1991C11.0663 12.0224 11.3216 11.742 11.4673 11.4029C11.6331 11.017 11.5863 10.5172 11.4926 9.5178L11.163 6.00269C11.0839 5.15873 11.0443 4.73674 10.8545 4.41771C10.6874 4.13673 10.4404 3.91183 10.1451 3.77163C9.8097 3.61244 9.38587 3.61244 8.5382 3.61244L4.5519 3.61244C3.70424 3.61244 3.2804 3.61244 2.94505 3.77163C2.64969 3.91183 2.40272 4.13673 2.23557 4.41771C2.04577 4.73674 2.00621 5.15873 1.92708 6.00269Z"
-                                stroke="#C11574" stroke-width="1.09847" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-
-                    </div>
-
-                    <div class="homework__details-container">
-                        <div class="homework__details details-2">
-                            <p>Ads Facebook</p>
-                            <p>0%</p>
-                        </div>
-                        <div class="loader__container container-2">
-                            <div class="loader loader-2"></div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 3 -->
-                <div class="homework homework-3">
-                    <div class="homework__icon icon-3">
-                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M1.05249 0.778442H1.76988C1.905 0.778442 1.97256 0.778442 2.02693 0.80329C2.07485 0.825187 2.11545 0.860402 2.1439 0.904737C2.17619 0.955046 2.18575 1.02193 2.20485 1.15569L2.46481 2.97538M2.46481 2.97538L3.04255 7.22174C3.11586 7.76061 3.15252 8.03005 3.28134 8.23286C3.39486 8.41157 3.5576 8.55367 3.74998 8.64205C3.96831 8.74236 4.24022 8.74236 4.78406 8.74236H9.48435C10.002 8.74236 10.2609 8.74236 10.4724 8.64922C10.6589 8.56709 10.8189 8.4347 10.9345 8.26684C11.0656 8.07647 11.114 7.8222 11.2109 7.31366L11.9378 3.49699C11.9719 3.318 11.989 3.22851 11.9643 3.15855C11.9426 3.09719 11.8998 3.04551 11.8436 3.01274C11.7795 2.97538 11.6884 2.97538 11.5062 2.97538H2.46481ZM5.44637 11.2139C5.44637 11.5173 5.20047 11.7632 4.89714 11.7632C4.5938 11.7632 4.3479 11.5173 4.3479 11.2139C4.3479 10.9106 4.5938 10.6647 4.89714 10.6647C5.20047 10.6647 5.44637 10.9106 5.44637 11.2139ZM9.84026 11.2139C9.84026 11.5173 9.59436 11.7632 9.29102 11.7632C8.98769 11.7632 8.74179 11.5173 8.74179 11.2139C8.74179 10.9106 8.98769 10.6647 9.29102 10.6647C9.59436 10.6647 9.84026 10.9106 9.84026 11.2139Z"
-                                stroke="#3538CD" stroke-width="1.09847" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-
-
-                    </div>
-
-                    <div class="homework__details-container">
-                        <div class="homework__details details-3">
-                            <p>Graphic Designer</p>
-                            <p>0%</p>
-                        </div>
-                        <div class="loader__container container-3">
-                            <div class="loader loader-3"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="homework homework-4">
-                    <div class="homework__icon icon-4">
-                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M16.5547 16.419C20.1854 15.9329 22.9855 12.8232 22.9855 9.05948C22.9855 4.95843 19.661 1.63388 15.5599 1.63388C11.7962 1.63388 8.68646 4.43404 8.20038 8.06473M16.6207 15.4243C16.6207 19.5253 13.2962 22.8499 9.19513 22.8499C5.09408 22.8499 1.76953 19.5253 1.76953 15.4243C1.76953 11.3232 5.09408 7.99868 9.19513 7.99868C13.2962 7.99868 16.6207 11.3232 16.6207 15.4243Z"
-                                stroke="#027A48" stroke-width="2.1216" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </div>
-
-                    <div class="homework__details-container">
-                        <div class="homework__details details-4">
-                            <p>Content Creator</p>
-                            <p>0%</p>
-                        </div>
-                        <div class="loader__container container-4">
-                            <div class="loader loader-4"></div>
-                        </div>
-                    </div>
-                </div>
-            </aside>
         </section>
-
     </main>
 </body>
 

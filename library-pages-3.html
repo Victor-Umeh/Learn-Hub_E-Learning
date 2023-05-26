@@ -93,14 +93,21 @@
             </svg>
             <a href="library.html">Library</a>
           </button>
-          <button class="Desktop__nav--icons settings">
-            <svg class="nav__icons" width="22" height="23" viewBox="0 0 27 27" fill="none"
+          <button class="Desktop__nav--icons">
+              <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.6895 4.5L19.9395 2.25L21 3.30825L18.75 5.559L17.6895 4.5ZM10.5 13.875L6.75 10.1542L7.9425 8.97675L10.5 11.5118L16.0575 6L17.25 7.18425L10.5 13.875Z" fill="#444343"/>
+                  <path d="M1.5 19.5V17.5597L6.3105 12.75L5.25 11.6887L1.5 15.4387V0H0V19.5C0 19.8978 0.158035 20.2794 0.43934 20.5607C0.720644 20.842 1.10218 21 1.5 21H21V19.5H1.5Z" fill="#444343"/>
+              </svg>                            
+              <a href="quiz.html">Test</a>
+          </button>
+          <button onclick="logOut()" class="Desktop__nav--icons settings">
+              <svg  class="profile__icon" id="logOut" width="29" height="25" viewBox="0 0 29 25" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
-                d="M23.7911 14.8218C23.8474 14.4 23.8755 13.964 23.8755 13.5C23.8755 13.05 23.8474 12.6 23.7771 12.1781L26.6318 9.95623C26.7548 9.85484 26.8388 9.71393 26.8696 9.55751C26.9004 9.4011 26.876 9.23885 26.8005 9.09842L24.1005 4.42968C24.021 4.28844 23.8941 4.1799 23.7423 4.12327C23.5904 4.06665 23.4234 4.0656 23.2708 4.12031L19.9099 5.4703C19.2068 4.93593 18.4615 4.48593 17.6318 4.14843L17.1255 0.576565C17.1006 0.415592 17.0188 0.268888 16.895 0.163095C16.7711 0.0573018 16.6134 -0.000564615 16.4505 4.15321e-06H11.0506C10.7131 4.15321e-06 10.4459 0.239066 10.3896 0.576565L9.88337 4.14843C9.05368 4.48593 8.29431 4.94999 7.60525 5.4703L4.24432 4.12031C3.93494 4.00781 3.58338 4.12031 3.41463 4.42968L0.7287 9.09842C0.55995 9.39373 0.6162 9.75936 0.897449 9.95623L3.75213 12.1781C3.68182 12.6 3.62557 13.064 3.62557 13.5C3.62557 13.9359 3.65369 14.4 3.72401 14.8218L0.869324 17.0437C0.746312 17.1451 0.66226 17.286 0.63149 17.4424C0.600719 17.5988 0.625134 17.7611 0.700575 17.9015L3.40057 22.5703C3.56932 22.8796 3.92088 22.9781 4.23025 22.8796L7.59118 21.5296C8.29431 22.064 9.03962 22.514 9.8693 22.8515L10.3756 26.4234C10.4459 26.7609 10.7131 26.9999 11.0506 26.9999H16.4505C16.788 26.9999 17.0693 26.7609 17.1115 26.4234L17.6177 22.8515C18.4474 22.514 19.2068 22.064 19.8958 21.5296L23.2568 22.8796C23.5661 22.9921 23.9177 22.8796 24.0865 22.5703L26.7865 17.9015C26.9552 17.5922 26.8849 17.2406 26.6177 17.0437L23.7911 14.8218ZM13.7505 18.5625C10.9662 18.5625 8.68806 16.2843 8.68806 13.5C8.68806 10.7156 10.9662 8.43748 13.7505 8.43748C16.5349 8.43748 18.813 10.7156 18.813 13.5C18.813 16.2843 16.5349 18.5625 13.7505 18.5625Z"
-                stroke="#444343" stroke-width="2.5" />
-            </svg>
-            <a>Settings</a>
+                  d="M17.7812 7.03125V4.29688C17.7812 3.57167 17.4932 2.87617 16.9804 2.36338C16.4676 1.85059 15.7721 1.5625 15.0469 1.5625H4.10938C3.38417 1.5625 2.68867 1.85059 2.17588 2.36338C1.66309 2.87617 1.375 3.57167 1.375 4.29688V20.7031C1.375 21.4283 1.66309 22.1238 2.17588 22.6366C2.68867 23.1494 3.38417 23.4375 4.10938 23.4375H14.5C16.0101 23.4375 17.7812 22.2132 17.7812 20.7031V17.9688M22.1562 7.03125L27.625 12.5L22.1562 17.9688M9.03125 12.5H26.5312"
+                  stroke="#444343" stroke-width="2.1875" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+              <a>Log Out</a> 
           </button>
           <div class="dashboard__active"></div>
         </div>
@@ -109,7 +116,7 @@
         <img src="assets/icons/display-pic.jpg" alt="profile picture">
         <!-- profile info -->
         <div class="profile__name--wrapper">
-          <p class="profile__name"><span id="profileFirstNmae">Olivia</span> <span id="lastName">Rhye</span></p>
+          <p class="profile__name"><span id="profileFirstNmae"></span> <span id="lastName">Rhye</span></p>
           <span class="profile__email" id="profileEmail">olivia@learnhub.edu</span>
         </div>
 
@@ -146,29 +153,70 @@
 
         <div class="book__screen">
             <p>
-              <span>Chapter X: Introduction to AI and VR</span><br>
-              Introduction Artificial Intelligence (AI) and Virtual Reality (VR) are two of the most exciting and rapidly growing technologies in the world. Both have the potential to revolutionize how we live, work, and interact with each other. This chapter will provide an introduction to AI and VR, including their history, features, and benefits.
+              <span>Chapter X: Introduction to AI and VR</span><br><br>
+              <h3><u>Introduction</u></h3><br>
+               Artificial Intelligence (AI) and Virtual Reality (VR) are two of the most exciting and rapidly growing technologies in the world. Both have the potential to revolutionize how we live, work, and interact with each other. This chapter will provide an introduction to AI and VR, including their history, features, and benefits.
               History of AI and VR The origins of AI can be traced back to the early 1950s, when computer scientist John McCarthy first coined the term "artificial intelligence." Since then, AI has grown rapidly, with advances in machine learning, natural language processing, and other technologies. VR, on the other hand, has a more recent history. The first VR headset was developed in the late 1960s, but it wasn't until the 1990s that VR technology became widely available.
               AI Features AI has several features that make it a powerful technology for solving complex problems. Some of the most important features of AI include:
-              Machine Learning AI systems can learn from data and improve their performance over time. This makes it possible to automate complex tasks and make predictions based on large amounts of data.
-              Natural Language Processing AI systems can understand and interpret human language, making it possible to develop applications that can communicate with people in natural ways.
-              Computer Vision AI systems can analyze images and videos, making it possible to develop applications that can recognize objects, faces, and other visual elements.
-              Robotics AI can be used to develop robots that can perform tasks autonomously, such as assembling products in a factory or exploring space.
-              Decision Making AI systems can make decisions based on data and rules, making it possible to automate decision-making processes in a wide range of industries.
-              VR Features VR has several features that make it a powerful technology for creating immersive experiences. Some of the most important features of VR include:
-              Immersive Environment VR provides a fully immersive environment that can transport users to new worlds and experiences.
-              Interactivity VR allows users to interact with virtual objects and environments, making it possible to create new types of user experiences.
-              Realism VR can create highly realistic environments and objects, making it possible to simulate real-world scenarios and experiences.
-              Accessibility VR technology is becoming more accessible and affordable, making it possible for more people to experience the benefits of VR.
-              Collaboration VR can enable users to collaborate in virtual environments, making it possible to work together regardless of physical location.
-              Benefits of AI and VR AI and VR have several benefits for businesses and individuals. Some of the most important benefits of AI and VR include:
-              Improved Efficiency AI can automate complex tasks and decision-making processes, while VR can create more efficient and engaging training and simulation environments.
-              Enhanced User Experiences AI can create more personalized and natural interactions with users, while VR can create immersive and engaging experiences.
-              Increased Productivity AI can improve decision-making and automate repetitive tasks, while VR can provide new ways to collaborate and work together.
-              Better Learning and Training VR can provide realistic and immersive training and simulation environments, while AI can provide personalized and adaptive learning experiences.
-              Competitive Advantage AI and VR can provide businesses with a competitive advantage by enabling them to create new products and services, improve efficiency and productivity, and provide better user experiences.
-              AI and VR Tools There are several tools that developers can use to build AI and VR applications. Some of the most popular AI and VR tools include:
-              TensorFlow TensorFlow is an open-source machine learning library that can be used to develop AI applications. It includes tools for deep learning, natural language processing, and computer vision.
+            </p><br>
+            <ol>
+              <li>
+                Machine Learning: AI systems can learn from data and improve their performance over time. This makes it possible to automate complex tasks and make predictions based on large amounts of data.
+              </li>
+              <li>
+                Natural Language Processing: AI systems can understand and interpret human language, making it possible to develop applications that can communicate with people in natural ways.
+              </li>
+              <li>
+                Computer Vision: AI systems can analyze images and videos, making it possible to develop applications that can recognize objects, faces, and other visual elements.
+              </li>
+              <li>
+                Robotics: AI can be used to develop robots that can perform tasks autonomously, such as assembling products in a factory or exploring space.
+              </li>
+              <li>
+                Decision Making: AI systems can make decisions based on data and rules, making it possible to automate decision-making processes in a wide range of industries.
+              </li>
+            </ol><br>
+            <p>
+              <u>VR Features</u><br> VR has several features that make it a powerful technology for creating immersive experiences. Some of the most important features of VR include:
+            </p><br>
+            <ol>
+              <li>
+                Immersive Environment: VR provides a fully immersive environment that can transport users to new worlds and experiences.
+              </li>
+              <li>
+                Interactivity: VR allows users to interact with virtual objects and environments, making it possible to create new types of user experiences.
+              </li>
+              <li>
+                Realism: VR can create highly realistic environments and objects, making it possible to simulate real-world scenarios and experiences.
+              </li>
+              <li>
+                Accessibility: VR technology is becoming more accessible and affordable, making it possible for more people to experience the benefits of VR.
+              </li>
+              <li>
+                Collaboration: VR can enable users to collaborate in virtual environments, making it possible to work together regardless of physical location.
+              </li>
+            </ol><br>
+            <p>
+              <u>Benefits of AI and VR</u><br> 
+              AI and VR have several benefits for businesses and individuals. Some of the most important benefits of AI and VR include:
+            </p><br>
+              <ol>
+                <li>
+                  Improved Efficiency: AI can automate complex tasks and decision-making processes, while VR can create more efficient and engaging training and simulation environments.
+                </li>
+                <li>
+                  Enhanced User Experiences: AI can create more personalized and natural interactions with users, while VR can create immersive and engaging experiences.
+                </li>
+                <li>
+                  Increased Productivity: AI can improve decision-making and automate repetitive tasks, while VR can provide new ways to collaborate and work together.
+                </li>
+                <li>
+                  Better Learning and Training: VR can provide realistic and immersive training and simulation environments, while AI can provide personalized and adaptive learning experiences.
+                </li>
+                <li>
+                  Competitive Advantage: AI and VR can provide businesses with a competitive advantage by enabling them to create new products and services, improve efficiency and productivity, and provide better user experiences.
+                </li>
+              </ol>
             </p>
         </div>
     </section>

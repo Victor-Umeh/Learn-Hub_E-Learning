@@ -360,6 +360,17 @@ body {
   color: var(--user-type-heading);
   margin-bottom: 3rem;
 }
+button{
+  display: flex;
+outline: none;
+/* width: 10rem; */
+/* height: 2rem; */
+padding: 1rem 2.5rem;
+border-radius: 4px;
+border-style: none;
+background-color: var(--purple);
+color: white;
+}
 .homework-1,
 .homework-2,
 .homework-3,
@@ -653,6 +664,9 @@ body {
   }
   .Desktop__nav--icons:nth-child(4):hover ~ .dashboard__active {
     top: 20.9rem;
+  }
+  .Desktop__nav--icons:nth-child(5):hover ~ .dashboard__active {
+    top: 28.4rem;
   }
   .subscription {
     padding: 4rem;

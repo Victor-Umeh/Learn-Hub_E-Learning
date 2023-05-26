@@ -20,15 +20,3 @@ document.addEventListener("DOMContentLoaded", function() {
     profileLast.innerHTML = user.lastname
   }
 });
-
-function logOut(){
-  localStorage.clear()
-  localStorage.removeItem('data');
-  window.location.href = 'index.html'
-
-}
-console.log(user.last)
-
-const logOUT = document.querySelector(".profile__icon")
-
-logOUT = addEventListener("click",)

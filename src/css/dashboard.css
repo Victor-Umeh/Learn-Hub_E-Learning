@@ -180,6 +180,26 @@ body {
   /* opacity: 0; */
   display: none;
 }
+/* Settings icon */
+button {
+  display: flex;
+  height: 30px;
+  width:8rem ;
+outline: none;
+border-radius: 4px;
+border-style: none;
+/* background-color:#e4e4e4; */
+}
+button p{
+  margin: auto;
+  
+}
+button i{
+ margin: auto;
+}
+ button:hover{
+  cursor: pointer;
+ }
 @media (min-width: 900px) {
   .nav {
     background: var(--very-light-gray);

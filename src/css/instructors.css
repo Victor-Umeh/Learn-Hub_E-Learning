@@ -460,6 +460,9 @@ body {
   .Desktop__nav--icons:nth-child(4):hover ~ .dashboard__active {
     top: 20.9rem;
   }
+  .Desktop__nav--icons:nth-child(5):hover ~ .dashboard__active {
+    top: 28.4rem;
+  }
   .subscription {
     padding: 4rem;
   }

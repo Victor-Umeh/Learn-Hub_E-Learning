@@ -234,6 +234,26 @@ form .tick input[type="radio"]:last-child {
     width: 100%;
     text-align: center;
   }
+
+/* Desktop Styles */
+@media (min-width: 462px) {
+    header {
+        height: 300px;
+    }
+}
+
+@media (min-width: 620px) {
+    header {
+        height: 340px;
+    }
+}
+
+@media (min-width: 700px) {
+    header {
+        height: 449px;
+        padding-block: 2rem;
+    }
+}
   
 
 /* Desktop Styles */
